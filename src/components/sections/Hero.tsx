@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import { projects } from "@/data/projects";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Instagram, Linkedin, Facebook } from "lucide-react";
+import trotsLogo from "@/assets/trots-logo.png";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const heroImages = projects.map((p) => ({ image: p.heroImage, name: p.name, location: p.location }));
+  const heroImages = projects.map((p) => ({ image: p.heroImage, name: p.name }));
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % heroImages.length);
@@ -37,75 +39,86 @@ const Hero = () => {
             alt={item.name}
             className="img-editorial"
           />
-          {/* Subtle overlay for text legibility */}
-          <div className="absolute inset-0 bg-foreground/10" />
         </motion.div>
       ))}
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-between">
-        {/* Tagline */}
-        <div className="px-gutter pt-32">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="text-body-lg text-primary-foreground max-w-xl font-light"
+      {/* Logo - Top Left */}
+      <div className="absolute top-8 left-8 z-20">
+        <img
+          src={trotsLogo}
+          alt="Trots Architects"
+          className="w-16 h-auto brightness-0 invert"
+        />
+      </div>
+
+      {/* Bottom bar */}
+      <div className="absolute bottom-8 left-8 right-8 z-20 flex items-end justify-between">
+        {/* Copyright - Left */}
+        <p className="text-micro text-primary-foreground/80">
+          © {new Date().getFullYear()} Trots Architects
+        </p>
+
+        {/* Navigation - Center */}
+        <div className="flex items-center gap-4">
+          <button
+            onClick={prevSlide}
+            className="p-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="Previous slide"
           >
-            Context-driven architecture rooted in experience, climate, and place.
-          </motion.p>
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <div className="flex gap-2">
+            {heroImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-500 ${
+                  index === currentIndex
+                    ? "bg-primary-foreground w-6"
+                    : "bg-primary-foreground/40"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+          <button
+            onClick={nextSlide}
+            className="p-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
         </div>
 
-        {/* Bottom controls */}
-        <div className="px-gutter pb-12 flex items-end justify-between">
-          {/* Project info */}
-          <motion.div
-            key={currentIndex}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
-            className="text-primary-foreground"
+        {/* Social Icons - Right */}
+        <div className="flex items-center gap-4">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="Instagram"
           >
-            <h2 className="font-serif text-subhead">{heroImages[currentIndex].name}</h2>
-            <p className="text-caption opacity-80">{heroImages[currentIndex].location}</p>
-          </motion.div>
-
-          {/* Navigation */}
-          <div className="flex items-center gap-6">
-            {/* Dots */}
-            <div className="flex gap-2">
-              {heroImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all duration-500 ${
-                    index === currentIndex
-                      ? "bg-primary-foreground w-6"
-                      : "bg-primary-foreground/40"
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Arrows */}
-            <div className="flex gap-2">
-              <button
-                onClick={prevSlide}
-                className="p-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                aria-label="Previous slide"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="p-2 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                aria-label="Next slide"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-          </div>
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-5 h-5" />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            aria-label="Facebook"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </section>

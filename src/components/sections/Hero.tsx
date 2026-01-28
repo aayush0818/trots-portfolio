@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import { projects } from "@/data/projects";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Instagram, Linkedin, Facebook } from "lucide-react";
+import { ChevronLeft, ChevronRight, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 import trotsLogo from "@/assets/trots-logo.png";
 
 const Hero = () => {
@@ -17,7 +17,6 @@ const Hero = () => {
     setCurrentIndex((prev) => (prev - 1 + heroImages.length) % heroImages.length);
   }, [heroImages.length]);
 
-  // Auto-advance carousel
   useEffect(() => {
     const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
@@ -42,19 +41,48 @@ const Hero = () => {
         </motion.div>
       ))}
 
-      {/* Logo - Top Left */}
-      <div className="absolute top-8 left-8 z-20">
-        <img
-          src={trotsLogo}
-          alt="Trots Architects"
-          className="w-16 h-auto brightness-0 invert"
-        />
+      {/* Top Navigation */}
+      <div className="absolute top-0 left-0 right-0 z-20 px-8 py-6 flex items-center justify-between">
+        {/* Logo + Text */}
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src={trotsLogo}
+            alt="Trots Architects"
+            className="w-12 h-auto"
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
+          <span className="font-serif text-lg text-white tracking-wide">
+            Trots Architects
+          </span>
+        </Link>
+
+        {/* Nav Links */}
+        <nav className="flex items-center gap-8">
+          <Link
+            to="/works"
+            className="text-caption text-white/80 hover:text-white transition-colors uppercase tracking-widest"
+          >
+            Work
+          </Link>
+          <Link
+            to="/about"
+            className="text-caption text-white/80 hover:text-white transition-colors uppercase tracking-widest"
+          >
+            Studio
+          </Link>
+          <Link
+            to="/contact"
+            className="text-caption text-white/80 hover:text-white transition-colors uppercase tracking-widest"
+          >
+            Contact
+          </Link>
+        </nav>
       </div>
 
       {/* Bottom bar */}
       <div className="absolute bottom-8 left-8 right-8 z-20 flex items-end justify-between">
         {/* Copyright - Left */}
-        <p className="text-micro text-primary-foreground/80">
+        <p className="text-micro text-white/70">
           © {new Date().getFullYear()} Trots Architects
         </p>
 
@@ -62,7 +90,7 @@ const Hero = () => {
         <div className="flex items-center gap-4">
           <button
             onClick={prevSlide}
-            className="p-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            className="p-2 text-white/70 hover:text-white transition-colors"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-5 h-5" />
@@ -74,8 +102,8 @@ const Hero = () => {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-2 h-2 rounded-full transition-all duration-500 ${
                   index === currentIndex
-                    ? "bg-primary-foreground w-6"
-                    : "bg-primary-foreground/40"
+                    ? "bg-white w-6"
+                    : "bg-white/40"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -83,7 +111,7 @@ const Hero = () => {
           </div>
           <button
             onClick={nextSlide}
-            className="p-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            className="p-2 text-white/70 hover:text-white transition-colors"
             aria-label="Next slide"
           >
             <ChevronRight className="w-5 h-5" />
@@ -96,7 +124,7 @@ const Hero = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            className="text-white/70 hover:text-white transition-colors"
             aria-label="Instagram"
           >
             <Instagram className="w-5 h-5" />
@@ -105,7 +133,7 @@ const Hero = () => {
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            className="text-white/70 hover:text-white transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
@@ -114,7 +142,7 @@ const Hero = () => {
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+            className="text-white/70 hover:text-white transition-colors"
             aria-label="Facebook"
           >
             <Facebook className="w-5 h-5" />

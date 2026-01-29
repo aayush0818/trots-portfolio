@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, Instagram, Linkedin, Facebook } from "lucide-react";
 import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
@@ -145,25 +145,61 @@ const Hero = () => {
         )}
       </AnimatePresence>
 
-      {/* Minimal slide indicators - bottom center */}
+      {/* Bottom bar: Copyright, indicators, social icons */}
       <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3"
+        className="absolute bottom-0 left-0 right-0 z-20 px-6 md:px-12 py-6 flex items-center justify-between"
       >
-        {heroImages.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`h-[2px] transition-all duration-700 ${
-              index === currentIndex 
-                ? "w-8 bg-white" 
-                : "w-4 bg-white/40 hover:bg-white/60"
-            }`}
-            aria-label={`Slide ${index + 1}`}
-          />
-        ))}
+        {/* Copyright */}
+        <p className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/60">
+          © {new Date().getFullYear()} Trots Architects
+        </p>
+
+        {/* Slide indicators */}
+        <div className="flex gap-3">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`h-[2px] transition-all duration-700 ${
+                index === currentIndex 
+                  ? "w-8 bg-white" 
+                  : "w-4 bg-white/40 hover:bg-white/60"
+              }`}
+              aria-label={`Slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Social icons */}
+        <div className="flex items-center gap-4">
+          <a 
+            href="https://instagram.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors duration-300"
+          >
+            <Instagram className="w-4 h-4" />
+          </a>
+          <a 
+            href="https://linkedin.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors duration-300"
+          >
+            <Linkedin className="w-4 h-4" />
+          </a>
+          <a 
+            href="https://facebook.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white/60 hover:text-white transition-colors duration-300"
+          >
+            <Facebook className="w-4 h-4" />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

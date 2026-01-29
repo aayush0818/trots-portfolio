@@ -76,16 +76,10 @@ const Header = () => {
         <motion.button
           whileTap={{ scale: 0.95 }}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className={`md:hidden p-2 z-50 rounded-md ${
-            isMenuOpen 
-              ? "text-foreground" 
-              : isDarkBackground 
-                ? "text-white" 
-                : "text-foreground"
-          }`}
+          className={`md:hidden p-2 z-50 ${isDarkBackground && !isMenuOpen ? "text-white" : "text-foreground"}`}
           aria-label="Toggle menu"
         >
-          {isMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+          {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </motion.button>
       </motion.nav>
 

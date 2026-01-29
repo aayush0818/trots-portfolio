@@ -1,13 +1,26 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
-import { projects } from "@/data/projects";
 import { ChevronLeft, ChevronRight, Instagram, Linkedin, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 import trotsLogo from "@/assets/trots-logo.png";
 
+// Curated hero images - best compositions for full-screen display
+import gvknHero from "@/assets/gvkn-residence-hero.jpg";
+import gvknExterior from "@/assets/gvkn-exterior-1.jpg";
+import gvknNight from "@/assets/gvkn-night.jpg";
+import arvindExterior from "@/assets/arvind-1.jpg";
+import basavarajCorner from "@/assets/basavaraj-1.jpg";
+
+const heroImages = [
+  { image: gvknHero, name: "GVKN Residence" },
+  { image: arvindExterior, name: "Arvind Residence" },
+  { image: gvknExterior, name: "GVKN Residence" },
+  { image: basavarajCorner, name: "Basavaraj Residence" },
+  { image: gvknNight, name: "GVKN Residence" },
+];
+
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const heroImages = projects.map((p) => ({ image: p.heroImage, name: p.name }));
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % heroImages.length);

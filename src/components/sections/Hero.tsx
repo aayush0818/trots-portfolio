@@ -4,19 +4,19 @@ import { ChevronLeft, ChevronRight, Instagram, Linkedin, Facebook } from "lucide
 import { Link } from "react-router-dom";
 import trotsLogo from "@/assets/trots-logo.png";
 
-// Curated hero images - best compositions for full-screen display
+// Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
-import gvknExterior from "@/assets/gvkn-exterior-1.jpg";
-import gvknNight from "@/assets/gvkn-night.jpg";
-import arvindExterior from "@/assets/arvind-1.jpg";
-import basavarajCorner from "@/assets/basavaraj-1.jpg";
+import gvknLiving from "@/assets/gvkn-living.jpg";
+import gvknDining from "@/assets/gvkn-dining.jpg";
+import basavaraj1 from "@/assets/basavaraj-1.jpg";
+import basavaraj2 from "@/assets/basavaraj-2.jpg";
 
 const heroImages = [
   { image: gvknHero, name: "GVKN Residence" },
-  { image: arvindExterior, name: "Arvind Residence" },
-  { image: gvknExterior, name: "GVKN Residence" },
-  { image: basavarajCorner, name: "Basavaraj Residence" },
-  { image: gvknNight, name: "GVKN Residence" },
+  { image: basavaraj1, name: "Basavaraj Residence" },
+  { image: gvknLiving, name: "GVKN Residence" },
+  { image: basavaraj2, name: "Basavaraj Residence" },
+  { image: gvknDining, name: "GVKN Residence" },
 ];
 
 const Hero = () => {
@@ -49,7 +49,7 @@ const Hero = () => {
           <img
             src={item.image}
             alt={item.name}
-            className="img-editorial"
+            className="w-full h-full object-cover object-center"
           />
         </motion.div>
       ))}

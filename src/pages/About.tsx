@@ -167,7 +167,7 @@ const About = () => {
       once: true
     }} transition={{
       duration: 1
-    }} className="relative h-[40vh] md:h-[60vh]">
+    }} className="relative h-[60vh] md:h-[80vh]">
         <img alt="Interior" className="w-full h-full object-cover" src="/lovable-uploads/192d3737-4e83-46ab-8dd3-bb0ce887237a.jpg" />
       </motion.section>
 

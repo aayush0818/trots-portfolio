@@ -26,7 +26,8 @@ const ProjectDetail = () => {
           <img
             src={project.heroImage}
             alt={project.name}
-            className="img-editorial"
+            className="w-full h-full object-cover"
+            loading="eager"
           />
         </section>
 
@@ -101,7 +102,8 @@ const ProjectDetail = () => {
                   <img
                     src={image}
                     alt={`${project.name} - Image ${index + 2}`}
-                    className="w-full"
+                    className="w-full h-auto"
+                    loading="lazy"
                   />
                 </motion.div>
               ))}

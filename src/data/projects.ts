@@ -1,21 +1,12 @@
 import gvknExterior1 from "@/assets/gvkn-exterior-1.jpg";
 import gvknExterior2 from "@/assets/gvkn-exterior-2.jpg";
-import gvknStaircase1 from "@/assets/gvkn-staircase-1.jpg";
-import gvknStaircase2 from "@/assets/gvkn-staircase-2.jpg";
-import gvknLiving from "@/assets/gvkn-living.jpg";
-import gvknDoor from "@/assets/gvkn-door.jpg";
 import gvknTerrace1 from "@/assets/gvkn-terrace-1.jpg";
 import gvknTerrace2 from "@/assets/gvkn-terrace-2.jpg";
 import gvknEntrance from "@/assets/gvkn-entrance.jpg";
 import gvknGarden from "@/assets/gvkn-garden.jpg";
 import gvknWindow from "@/assets/gvkn-window.jpg";
 import gvknLanding from "@/assets/gvkn-landing.jpg";
-import gvknDining from "@/assets/gvkn-dining.jpg";
-import gvknKitchen from "@/assets/gvkn-kitchen.jpg";
 import gvknNight from "@/assets/gvkn-night.jpg";
-import gvknDecor from "@/assets/gvkn-decor.jpg";
-import gvknStairwell from "@/assets/gvkn-stairwell.jpg";
-import gvknBedroom from "@/assets/gvkn-bedroom.jpg";
 import arvindResidence from "@/assets/arvind-residence.jpg";
 import coxTown from "@/assets/cox-town.jpg";
 import basavarajResidence from "@/assets/basavaraj-residence.jpg";
@@ -43,17 +34,8 @@ export const projects: Project[] = [
       gvknExterior2,
       gvknEntrance,
       gvknGarden,
-      gvknStaircase1,
-      gvknStaircase2,
-      gvknStairwell,
       gvknLanding,
-      gvknLiving,
-      gvknDining,
-      gvknKitchen,
-      gvknBedroom,
       gvknWindow,
-      gvknDoor,
-      gvknDecor,
       gvknTerrace1,
       gvknTerrace2,
       gvknNight,

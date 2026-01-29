@@ -17,7 +17,8 @@ import gvknKitchen from "@/assets/gvkn-kitchen.jpg";
 import gvknDecor from "@/assets/gvkn-decor.jpg";
 import gvknStairwell from "@/assets/gvkn-stairwell.jpg";
 import gvknBedroom from "@/assets/gvkn-bedroom.jpg";
-import arvindResidence from "@/assets/arvind-residence.jpg";
+import arvind1 from "@/assets/arvind-1.jpg";
+import arvind2 from "@/assets/arvind-2.jpg";
 import coxTown1 from "@/assets/cox-town-1.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
@@ -69,8 +70,8 @@ export const projects: Project[] = [
     name: "Arvind Residence",
     location: "Jayanagar",
     type: "Residential",
-    heroImage: arvindResidence,
-    images: [arvindResidence],
+    heroImage: arvind1,
+    images: [arvind1, arvind2],
     description:
       "Apartment project focused on spatial clarity and refined residential living. The design prioritizes natural light, ventilation, and a sense of openness within urban constraints.",
   },

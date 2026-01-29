@@ -181,8 +181,18 @@
     to { opacity: 1; }
   }
 
-  /* Editorial image treatment */
+  /* Editorial image treatment - better desktop display */
   .img-editorial {
     @apply w-full h-full object-cover;
+    object-position: center center;
+  }
+
+  /* Hero-specific: contain on wide screens to prevent over-cropping */
+  @media (min-width: 1024px) and (min-aspect-ratio: 16/10) {
+    .img-hero {
+      @apply w-full h-full;
+      object-fit: cover;
+      object-position: center 40%;
+    }
   }
 }

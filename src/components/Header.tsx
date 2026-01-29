@@ -35,9 +35,6 @@ const Header = () => {
             src={trotsLogo}
             alt="Trots Architects"
             className="w-14 h-auto"
-            style={{ 
-              filter: isDarkBackground ? "brightness(0) invert(1)" : "none" 
-            }}
           />
           <span className={`font-serif text-lg tracking-wide transition-colors duration-300 ${
             isDarkBackground ? "text-white" : "text-foreground"

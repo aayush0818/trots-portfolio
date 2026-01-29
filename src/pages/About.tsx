@@ -168,7 +168,7 @@ const About = () => {
     }} transition={{
       duration: 1
     }} className="relative h-[40vh] md:h-[60vh]">
-        <img src={gvknLiving} alt="Interior" className="w-full h-full object-cover" />
+        <img alt="Interior" className="w-full h-full object-cover" src="/lovable-uploads/192d3737-4e83-46ab-8dd3-bb0ce887237a.jpg" />
       </motion.section>
 
       {/* Approach */}

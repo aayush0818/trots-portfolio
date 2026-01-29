@@ -1,4 +1,5 @@
 import gvknExterior1 from "@/assets/gvkn-exterior-1.jpg";
+import gvknResidenceHero from "@/assets/gvkn-residence-hero.jpg";
 import gvknExterior2 from "@/assets/gvkn-exterior-2.jpg";
 import gvknTerrace1 from "@/assets/gvkn-terrace-1.jpg";
 import gvknTerrace2 from "@/assets/gvkn-terrace-2.jpg";
@@ -37,7 +38,7 @@ export const projects: Project[] = [
     name: "GVKN Residence",
     location: "Bangalore",
     type: "Residential",
-    heroImage: gvknExterior1,
+    heroImage: gvknResidenceHero,
     images: [
       gvknExterior1,
       gvknExterior2,

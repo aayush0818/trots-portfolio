@@ -8,6 +8,14 @@ import gvknTerrace1 from "@/assets/gvkn-terrace-1.jpg";
 import gvknTerrace2 from "@/assets/gvkn-terrace-2.jpg";
 import gvknEntrance from "@/assets/gvkn-entrance.jpg";
 import gvknGarden from "@/assets/gvkn-garden.jpg";
+import gvknWindow from "@/assets/gvkn-window.jpg";
+import gvknLanding from "@/assets/gvkn-landing.jpg";
+import gvknDining from "@/assets/gvkn-dining.jpg";
+import gvknKitchen from "@/assets/gvkn-kitchen.jpg";
+import gvknNight from "@/assets/gvkn-night.jpg";
+import gvknDecor from "@/assets/gvkn-decor.jpg";
+import gvknStairwell from "@/assets/gvkn-stairwell.jpg";
+import gvknBedroom from "@/assets/gvkn-bedroom.jpg";
 import arvindResidence from "@/assets/arvind-residence.jpg";
 import coxTown from "@/assets/cox-town.jpg";
 import basavarajResidence from "@/assets/basavaraj-residence.jpg";
@@ -37,10 +45,18 @@ export const projects: Project[] = [
       gvknGarden,
       gvknStaircase1,
       gvknStaircase2,
+      gvknStairwell,
+      gvknLanding,
       gvknLiving,
+      gvknDining,
+      gvknKitchen,
+      gvknBedroom,
+      gvknWindow,
       gvknDoor,
+      gvknDecor,
       gvknTerrace1,
       gvknTerrace2,
+      gvknNight,
     ],
     description:
       "North-facing 2,400 sq ft urban residence anchored by an existing Indian beech tree. Emphasis on volumetric articulation, light, shadow, cross-ventilation, and garden voids. Rich wooden craftsmanship balanced with contemporary finishes, creating a timeless and contextually grounded home.",

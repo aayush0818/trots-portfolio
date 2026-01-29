@@ -1,5 +1,13 @@
-import gvknHero from "@/assets/gvkn-residence-hero.jpg";
-import gvknInterior from "@/assets/gvkn-interior.jpg";
+import gvknExterior1 from "@/assets/gvkn-exterior-1.jpg";
+import gvknExterior2 from "@/assets/gvkn-exterior-2.jpg";
+import gvknStaircase1 from "@/assets/gvkn-staircase-1.jpg";
+import gvknStaircase2 from "@/assets/gvkn-staircase-2.jpg";
+import gvknLiving from "@/assets/gvkn-living.jpg";
+import gvknDoor from "@/assets/gvkn-door.jpg";
+import gvknTerrace1 from "@/assets/gvkn-terrace-1.jpg";
+import gvknTerrace2 from "@/assets/gvkn-terrace-2.jpg";
+import gvknEntrance from "@/assets/gvkn-entrance.jpg";
+import gvknGarden from "@/assets/gvkn-garden.jpg";
 import arvindResidence from "@/assets/arvind-residence.jpg";
 import coxTown from "@/assets/cox-town.jpg";
 import basavarajResidence from "@/assets/basavaraj-residence.jpg";
@@ -21,8 +29,19 @@ export const projects: Project[] = [
     name: "GVKN Residence",
     location: "Bangalore",
     type: "Residential",
-    heroImage: gvknHero,
-    images: [gvknHero, gvknInterior],
+    heroImage: gvknExterior1,
+    images: [
+      gvknExterior1,
+      gvknExterior2,
+      gvknEntrance,
+      gvknGarden,
+      gvknStaircase1,
+      gvknStaircase2,
+      gvknLiving,
+      gvknDoor,
+      gvknTerrace1,
+      gvknTerrace2,
+    ],
     description:
       "North-facing 2,400 sq ft urban residence anchored by an existing Indian beech tree. Emphasis on volumetric articulation, light, shadow, cross-ventilation, and garden voids. Rich wooden craftsmanship balanced with contemporary finishes, creating a timeless and contextually grounded home.",
   },

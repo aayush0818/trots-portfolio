@@ -35,11 +35,13 @@ const ProjectDetail = () => {
       <main>
         {/* Hero Image with Title Overlay */}
         <section className="relative h-screen">
-          <img
-            src={project.heroImage}
-            alt={project.name}
-            className="w-full h-full object-cover"
-          />
+          <div className="absolute inset-0">
+            <img
+              src={project.heroImage}
+              alt={project.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-8">
             <h1 className="font-serif text-3xl md:text-5xl text-white">

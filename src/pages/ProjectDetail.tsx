@@ -34,7 +34,7 @@ const ProjectDetail = () => {
       <Header />
       <main>
         {/* Hero Image with Title Overlay */}
-        <section className="relative h-[60vh] min-h-[400px] max-h-[600px]">
+        <section className="relative h-screen">
           <img
             src={project.heroImage}
             alt={project.name}

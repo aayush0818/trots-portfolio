@@ -6,7 +6,7 @@ import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
-import gvknLiving from "@/assets/gvkn-living.jpg";
+import gvknTerrace from "@/assets/gvkn-terrace-1.jpg";
 import gvknDining from "@/assets/gvkn-dining.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
@@ -14,7 +14,7 @@ import basavaraj2 from "@/assets/basavaraj-2.jpg";
 const heroImages = [
   { image: gvknHero, name: "GVKN Residence" },
   { image: basavaraj1, name: "Basavaraj Residence" },
-  { image: gvknLiving, name: "GVKN Residence" },
+  { image: gvknTerrace, name: "GVKN Residence" },
   { image: basavaraj2, name: "Basavaraj Residence" },
   { image: gvknDining, name: "GVKN Residence" },
 ];

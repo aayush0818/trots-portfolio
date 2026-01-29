@@ -102,7 +102,7 @@ const ProjectDetail = () => {
                   <span className="w-32 text-muted-foreground uppercase tracking-wider text-xs">
                     Status
                   </span>
-                  <span className="text-foreground">Completed</span>
+                  <span className="text-foreground">{project.status}</span>
                 </div>
               </div>
 

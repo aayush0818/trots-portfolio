@@ -29,6 +29,7 @@ export interface Project {
   name: string;
   location: string;
   type: string;
+  status: "Completed" | "Proposed" | "Under Construction";
   heroImage: string;
   images: string[];
   description: string;
@@ -40,6 +41,7 @@ export const projects: Project[] = [
     name: "GVKN Residence",
     location: "Bangalore",
     type: "Residential",
+    status: "Completed",
     heroImage: gvknResidenceHero,
     images: [
       gvknExterior1,
@@ -69,6 +71,7 @@ export const projects: Project[] = [
     name: "Arvind Residence",
     location: "Jayanagar",
     type: "Residential",
+    status: "Completed",
     heroImage: arvind1,
     images: [arvind1, arvind2],
     description:
@@ -79,19 +82,21 @@ export const projects: Project[] = [
     name: "Cox Town Apartment",
     location: "Bengaluru",
     type: "Residential",
+    status: "Proposed",
     heroImage: coxTown1,
     images: [coxTown1],
     description:
-      "Urban apartment responding to dense surroundings and spatial efficiency. The project balances privacy with connectivity, creating intimate living spaces within a bustling urban fabric.",
+      "Proposed mid-rise apartment responding to dense urban surroundings. The design integrates vertical greenery and a distinctive stone spine to balance privacy with street presence.",
   },
   {
     id: "basavaraj-residence",
     name: "Basavaraj Residence",
     location: "Kanakapura Road",
     type: "Residential",
+    status: "Proposed",
     heroImage: basavaraj1,
     images: [basavaraj1, basavaraj2, basavaraj3],
     description:
-      "Independent residential house rooted in site context and material sensibility. Local materials and traditional craft techniques inform a contemporary interpretation of regional architecture.",
+      "Proposed independent residence exploring brick jali screens, integrated planters, and climate-responsive massing. The design draws on local craft traditions while addressing contemporary living.",
   },
 ];

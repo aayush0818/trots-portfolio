@@ -19,7 +19,9 @@ import gvknStairwell from "@/assets/gvkn-stairwell.jpg";
 import gvknBedroom from "@/assets/gvkn-bedroom.jpg";
 import arvindResidence from "@/assets/arvind-residence.jpg";
 import coxTown from "@/assets/cox-town.jpg";
-import basavarajResidence from "@/assets/basavaraj-residence.jpg";
+import basavaraj1 from "@/assets/basavaraj-1.jpg";
+import basavaraj2 from "@/assets/basavaraj-2.jpg";
+import basavaraj3 from "@/assets/basavaraj-3.jpg";
 import hrbrCommercial from "@/assets/hrbr-commercial.jpg";
 
 export interface Project {
@@ -87,8 +89,8 @@ export const projects: Project[] = [
     name: "Basavaraj Residence",
     location: "Kanakapura Road",
     type: "Residential",
-    heroImage: basavarajResidence,
-    images: [basavarajResidence],
+    heroImage: basavaraj1,
+    images: [basavaraj1, basavaraj2, basavaraj3],
     description:
       "Independent residential house rooted in site context and material sensibility. Local materials and traditional craft techniques inform a contemporary interpretation of regional architecture.",
   },
@@ -107,8 +109,8 @@ export const projects: Project[] = [
     name: "Antahpura Layout",
     location: "Nandyal",
     type: "Urban Planning",
-    heroImage: basavarajResidence,
-    images: [basavarajResidence],
+    heroImage: basavaraj1,
+    images: [basavaraj1],
     description:
       "Layout design responding to land structure and community planning. The masterplan integrates green corridors, communal spaces, and efficient circulation networks.",
   },

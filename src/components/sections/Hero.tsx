@@ -77,7 +77,7 @@ const Hero = () => {
             <img
               src={trotsLogo}
               alt="Trots"
-              className="w-10 h-auto"
+              className="w-14 h-auto"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <span className="font-serif text-lg text-white tracking-wide">

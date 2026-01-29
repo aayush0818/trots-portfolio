@@ -32,7 +32,7 @@ const Header = () => {
             transition={{ duration: 0.3 }}
             src={trotsLogo}
             alt="Trots Architects"
-            className="w-10 h-auto"
+            className="w-14 h-auto"
             style={{ 
               filter: isDarkBackground ? "brightness(0) invert(1)" : "none" 
             }}

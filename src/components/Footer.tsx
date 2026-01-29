@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import trotsLogo from "@/assets/trots-logo.png";
 
 const Footer = () => {
   return (
@@ -8,17 +9,11 @@ const Footer = () => {
           {/* Studio Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 60 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-foreground"
-              >
-                <rect x="10" y="10" width="40" height="6" fill="currentColor" />
-                <rect x="25" y="16" width="10" height="34" fill="currentColor" />
-              </svg>
+              <img
+                src={trotsLogo}
+                alt="Trots Architects"
+                className="w-12 h-auto"
+              />
               <span className="font-serif text-foreground">Trots Architects</span>
             </div>
             <p className="text-caption text-muted-foreground leading-relaxed">

@@ -23,7 +23,6 @@ import coxTown1 from "@/assets/cox-town-1.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import basavaraj3 from "@/assets/basavaraj-3.jpg";
-import hrbrCommercial from "@/assets/hrbr-commercial.jpg";
 
 export interface Project {
   id: string;
@@ -94,25 +93,5 @@ export const projects: Project[] = [
     images: [basavaraj1, basavaraj2, basavaraj3],
     description:
       "Independent residential house rooted in site context and material sensibility. Local materials and traditional craft techniques inform a contemporary interpretation of regional architecture.",
-  },
-  {
-    id: "hrbr-commercial",
-    name: "Commercial Building",
-    location: "HRBR",
-    type: "Commercial",
-    heroImage: hrbrCommercial,
-    images: [hrbrCommercial],
-    description:
-      "Commercial architecture balancing functionality, form, and urban presence. The building addresses street-level engagement while providing efficient, flexible workspace above.",
-  },
-  {
-    id: "antahpura-layout",
-    name: "Antahpura Layout",
-    location: "Nandyal",
-    type: "Urban Planning",
-    heroImage: basavaraj1,
-    images: [basavaraj1],
-    description:
-      "Layout design responding to land structure and community planning. The masterplan integrates green corridors, communal spaces, and efficient circulation networks.",
   },
 ];

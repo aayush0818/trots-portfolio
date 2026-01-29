@@ -131,7 +131,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder="Your name"
-                    className="bg-transparent border-0 border-b border-border rounded-none px-0 h-12 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors"
+                    className="bg-transparent border-0 border-b border-border rounded-none px-0 h-14 text-lg md:text-xl text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors"
                   />
                 </div>
 
@@ -150,7 +150,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     placeholder="your@email.com"
-                    className="bg-transparent border-0 border-b border-border rounded-none px-0 h-12 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors"
+                    className="bg-transparent border-0 border-b border-border rounded-none px-0 h-14 text-lg md:text-xl text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors"
                   />
                 </div>
 
@@ -169,7 +169,7 @@ const Contact = () => {
                     required
                     placeholder="Tell us about your project..."
                     rows={4}
-                    className="bg-transparent border-0 border-b border-border rounded-none px-0 text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors resize-none"
+                    className="bg-transparent border-0 border-b border-border rounded-none px-0 text-lg md:text-xl text-foreground placeholder:text-muted-foreground/50 focus-visible:ring-0 focus-visible:border-foreground transition-colors resize-none"
                   />
                 </div>
 

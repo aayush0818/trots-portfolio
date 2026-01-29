@@ -3,58 +3,64 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import gvknStaircase from "@/assets/gvkn-staircase-1.jpg";
 import gvknLiving from "@/assets/gvkn-living.jpg";
-
 const About = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero */}
       <section className="pt-24 md:pt-32 pb-16 md:pb-24 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-6"
-          >
+          <motion.p initial={{
+          opacity: 0
+        }} animate={{
+          opacity: 1
+        }} transition={{
+          duration: 0.8
+        }} className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-6">
             Studio
           </motion.p>
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-serif text-[clamp(2.5rem,8vw,5rem)] text-foreground leading-[1.1] max-w-4xl"
-          >
+          <motion.h1 initial={{
+          opacity: 0,
+          y: 20
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.8,
+          delay: 0.1
+        }} className="font-serif text-[clamp(2.5rem,8vw,5rem)] text-foreground leading-[1.1] max-w-4xl">
             Architecture shaped by context, light & human experience
           </motion.h1>
         </div>
       </section>
 
       {/* Full bleed image */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className="relative h-[50vh] md:h-[70vh]"
-      >
-        <img
-          src={gvknStaircase}
-          alt="Trots Architects"
-          className="w-full h-full object-cover"
-        />
+      <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 1
+    }} className="relative h-[50vh] md:h-[70vh]">
+        <img alt="Trots Architects" className="w-full h-full object-cover" src="/lovable-uploads/c655d491-e7f2-47c8-8f97-1b9791d0c7cb.jpg" />
       </motion.section>
 
       {/* Philosophy */}
       <section className="py-20 md:py-32 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 30
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.8
+        }}>
             <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-8">
               Philosophy
             </p>
@@ -64,13 +70,18 @@ const About = () => {
               context, human experience, and environmental response.
             </h2>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col justify-end"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 30
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.8,
+          delay: 0.2
+        }} className="flex flex-col justify-end">
             <p className="text-muted-foreground leading-relaxed">
               Each project responds to its unique surroundings, allowing built 
               and unbuilt elements to merge seamlessly. Our work extends beyond 
@@ -84,22 +95,28 @@ const About = () => {
       {/* Team */}
       <section className="py-20 md:py-32 px-6 md:px-16 border-t border-border">
         <div className="max-w-7xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-16"
-          >
+          <motion.p initial={{
+          opacity: 0
+        }} whileInView={{
+          opacity: 1
+        }} viewport={{
+          once: true
+        }} className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-16">
             People
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-20">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 30
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.8
+          }}>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-3">
                 Nandesh GK
               </h3>
@@ -113,12 +130,18 @@ const About = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-            >
+            <motion.div initial={{
+            opacity: 0,
+            y: 30
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.8,
+            delay: 0.1
+          }}>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-3">
                 Nikitha GS
               </h3>
@@ -136,48 +159,64 @@ const About = () => {
       </section>
 
       {/* Second Image */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className="relative h-[40vh] md:h-[60vh]"
-      >
-        <img
-          src={gvknLiving}
-          alt="Interior"
-          className="w-full h-full object-cover"
-        />
+      <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 1
+    }} className="relative h-[40vh] md:h-[60vh]">
+        <img src={gvknLiving} alt="Interior" className="w-full h-full object-cover" />
       </motion.section>
 
       {/* Approach */}
       <section className="py-20 md:py-32 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-16"
-          >
+          <motion.p initial={{
+          opacity: 0
+        }} whileInView={{
+          opacity: 1
+        }} viewport={{
+          once: true
+        }} className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-16">
             Approach
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
-            {[
-              { num: "01", title: "Discovery", desc: "Understanding vision, lifestyle, functional needs" },
-              { num: "02", title: "Context", desc: "Site, climate, movement, environmental response" },
-              { num: "03", title: "Concept", desc: "Spatial ideas inspired by light, nature, movement" },
-              { num: "04", title: "Design", desc: "Detailed planning with material clarity" },
-              { num: "05", title: "Execution", desc: "Coordination to ensure intent realized" },
-            ].map((step, i) => (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="border-t border-border pt-6"
-              >
+            {[{
+            num: "01",
+            title: "Discovery",
+            desc: "Understanding vision, lifestyle, functional needs"
+          }, {
+            num: "02",
+            title: "Context",
+            desc: "Site, climate, movement, environmental response"
+          }, {
+            num: "03",
+            title: "Concept",
+            desc: "Spatial ideas inspired by light, nature, movement"
+          }, {
+            num: "04",
+            title: "Design",
+            desc: "Detailed planning with material clarity"
+          }, {
+            num: "05",
+            title: "Execution",
+            desc: "Coordination to ensure intent realized"
+          }].map((step, i) => <motion.div key={step.num} initial={{
+            opacity: 0,
+            y: 20
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} viewport={{
+            once: true
+          }} transition={{
+            duration: 0.6,
+            delay: i * 0.1
+          }} className="border-t border-border pt-6">
                 <span className="text-[10px] text-muted-foreground font-mono">
                   {step.num}
                 </span>
@@ -187,15 +226,12 @@ const About = () => {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {step.desc}
                 </p>
-              </motion.div>
-            ))}
+              </motion.div>)}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;

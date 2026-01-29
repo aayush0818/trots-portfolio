@@ -18,7 +18,7 @@ import gvknDecor from "@/assets/gvkn-decor.jpg";
 import gvknStairwell from "@/assets/gvkn-stairwell.jpg";
 import gvknBedroom from "@/assets/gvkn-bedroom.jpg";
 import arvindResidence from "@/assets/arvind-residence.jpg";
-import coxTown from "@/assets/cox-town.jpg";
+import coxTown1 from "@/assets/cox-town-1.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import basavaraj3 from "@/assets/basavaraj-3.jpg";
@@ -79,8 +79,8 @@ export const projects: Project[] = [
     name: "Cox Town Apartment",
     location: "Bengaluru",
     type: "Residential",
-    heroImage: coxTown,
-    images: [coxTown],
+    heroImage: coxTown1,
+    images: [coxTown1],
     description:
       "Urban apartment responding to dense surroundings and spatial efficiency. The project balances privacy with connectivity, creating intimate living spaces within a bustling urban fabric.",
   },

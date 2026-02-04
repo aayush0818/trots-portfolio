@@ -23,6 +23,7 @@ import coxTown1 from "@/assets/cox-town-1.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import basavaraj3 from "@/assets/basavaraj-3.jpg";
+import vedham from "@/assets/vedham.jpg";
 
 export interface Project {
   id: string;
@@ -98,5 +99,16 @@ export const projects: Project[] = [
     images: [basavaraj1, basavaraj2, basavaraj3],
     description:
       "Proposed independent residence exploring brick jali screens, integrated planters, and climate-responsive massing. The design draws on local craft traditions while addressing contemporary living.",
+  },
+  {
+    id: "vedham",
+    name: "Vedham",
+    location: "Bangalore",
+    type: "Layout Design",
+    status: "Proposed",
+    heroImage: vedham,
+    images: [vedham],
+    description:
+      "Master planning and layout design featuring integrated green spaces, tree-lined avenues, and thoughtfully organized plots. The design emphasizes connectivity with nature while creating a cohesive residential community.",
   },
 ];

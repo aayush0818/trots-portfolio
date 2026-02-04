@@ -39,10 +39,13 @@ const Header = () => {
               filter: isDarkBackground ? "brightness(0) invert(1)" : "none" 
             }}
           />
-          <span className={`font-serif text-lg tracking-wide transition-colors duration-300 ${
-            isDarkBackground ? "text-white" : "text-foreground"
-          }`}>
-            Trots Architects
+          <span 
+            className={`text-lg tracking-wide transition-colors duration-300 ${
+              isDarkBackground ? "text-white" : "text-foreground"
+            }`}
+            style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
+          >
+            T<span style={{ fontStyle: 'italic' }}>r</span>.ots Architects
           </span>
         </Link>
 

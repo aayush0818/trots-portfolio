@@ -45,7 +45,7 @@ const Header = () => {
             }`}
             style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
           >
-            T<span style={{ fontStyle: 'italic' }}>r</span>.ots Architects
+            T<span style={{ fontStyle: 'italic' }}>r</span>o.ts Architects
           </span>
         </Link>
 

@@ -55,11 +55,17 @@ const IntroScreen = ({ onComplete }: IntroScreenProps) => {
             transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
             className="text-center"
           >
-            <h1 className="font-serif text-2xl tracking-wide text-foreground">
-              Trots Architects
+            <h1 
+              className="text-2xl tracking-wide text-foreground"
+              style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
+            >
+              T<span style={{ letterSpacing: '-0.05em' }}>r</span>.ots Architects
             </h1>
-            <p className="mt-2 text-micro uppercase tracking-widest text-muted-foreground">
-              Context-Driven Architecture
+            <p 
+              className="mt-2 text-micro uppercase tracking-widest text-muted-foreground"
+              style={{ fontFamily: "'Sora', sans-serif", fontWeight: 300 }}
+            >
+              Tropical Thoughts
             </p>
           </motion.div>
         </motion.div>

@@ -24,6 +24,7 @@ import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import basavaraj3 from "@/assets/basavaraj-3.jpg";
 import vedham from "@/assets/vedham.jpg";
+import nandhyal from "@/assets/nandhyal.jpg";
 
 export interface Project {
   id: string;
@@ -110,5 +111,16 @@ export const projects: Project[] = [
     images: [vedham],
     description:
       "Master planning and layout design featuring integrated green spaces, tree-lined avenues, and thoughtfully organized plots. The design emphasizes connectivity with nature while creating a cohesive residential community.",
+  },
+  {
+    id: "nandhyal",
+    name: "Nandhyal",
+    location: "Nandyal, Andhra Pradesh",
+    type: "Layout Design",
+    status: "Proposed",
+    heroImage: nandhyal,
+    images: [nandhyal],
+    description:
+      "Township master plan featuring 200 residential plots with comprehensive amenities including club house, swimming pool, amphitheatre, sports courts, and landscaped open spaces. The design balances density with green infrastructure along a 200-feet wide main road corridor.",
   },
 ];

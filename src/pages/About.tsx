@@ -310,26 +310,26 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="max-w-sm"
             >
-              <div className="aspect-[3/4] mb-6 overflow-hidden">
+              <div className="aspect-square mb-6 overflow-hidden">
                 <img 
                   src={nandeshImg} 
                   alt="Nandesh GK" 
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2">
                 Nandesh GK
               </h3>
-              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
                 Studio Head
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 An alumnus of Dayananda Sagar College of Architecture, Nandesh completed 
                 his Bachelor of Architecture in 2017. His design interest lies in creating 
                 context-responsive architecture that balances functionality, materiality, 
-                and spatial clarity. He is passionate about shaping built environments 
-                sensitive to climate and human experience.
+                and spatial clarity.
               </p>
             </motion.div>
 
@@ -338,26 +338,26 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
+              className="max-w-sm"
             >
-              <div className="aspect-[3/4] mb-6 overflow-hidden">
+              <div className="aspect-square mb-6 overflow-hidden">
                 <img 
                   src={nikithaImg} 
                   alt="Nikitha GS" 
                   className="w-full h-full object-cover object-top"
                 />
               </div>
-              <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2">
                 Nikitha GS
               </h3>
-              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">
                 Studio Head
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Nikitha completed her Bachelor of Architecture from SJB School of 
                 Architecture and Planning in 2019, and earned her Master's in Urban Design 
-                from BMS School of Architecture in 2022. Her design interest lies in 
-                understanding cities and spaces across multiple scales, with a strong focus 
-                on people-centric and sustainable design.
+                from BMS School of Architecture in 2022. Her focus is on people-centric 
+                and sustainable design.
               </p>
             </motion.div>
           </div>

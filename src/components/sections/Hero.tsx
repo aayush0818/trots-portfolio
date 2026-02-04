@@ -10,13 +10,23 @@ import gvknTerrace from "@/assets/gvkn-terrace-1.jpg";
 import gvknDining from "@/assets/gvkn-dining.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
+import carouselStaircase from "@/assets/carousel-staircase.png";
+import carouselArtNiche from "@/assets/carousel-art-niche.png";
+import carouselDining from "@/assets/carousel-dining.png";
+import carouselBedroom from "@/assets/carousel-bedroom.png";
+import carouselExterior from "@/assets/carousel-exterior.png";
 
 const heroImages = [
   gvknHero,
   basavaraj1,
+  carouselStaircase,
   gvknTerrace,
+  carouselDining,
   basavaraj2,
+  carouselBedroom,
   gvknDining,
+  carouselArtNiche,
+  carouselExterior,
 ];
 
 const Hero = () => {
@@ -28,7 +38,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
+    const timer = setInterval(nextSlide, 4000); // Increased speed from 5000ms to 4000ms
     return () => clearInterval(timer);
   }, [nextSlide]);
 

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import nandeshImg from "@/assets/nandesh-gk.jpeg";
+import nikithaImg from "@/assets/nikitha-gs.jpeg";
 
 const About = () => {
   return (
@@ -302,13 +304,20 @@ const About = () => {
             Team
           </motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-14">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
+              <div className="aspect-[3/4] mb-6 overflow-hidden">
+                <img 
+                  src={nandeshImg} 
+                  alt="Nandesh GK" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
                 Nandesh GK
               </h3>
@@ -330,6 +339,13 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
+              <div className="aspect-[3/4] mb-6 overflow-hidden">
+                <img 
+                  src={nikithaImg} 
+                  alt="Nikitha GS" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
                 Nikitha GS
               </h3>

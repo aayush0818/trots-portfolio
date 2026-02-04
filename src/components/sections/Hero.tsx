@@ -38,7 +38,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 4000); // Increased speed from 5000ms to 4000ms
+    const timer = setInterval(nextSlide, 2500); // Faster: 2.5 seconds per slide
     return () => clearInterval(timer);
   }, [nextSlide]);
 

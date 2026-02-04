@@ -81,62 +81,58 @@ const About = () => {
         </div>
       </section>
 
-      {/* Philosophy - Full Width Statement */}
-      <section className="py-20 md:py-32 px-6 md:px-16 bg-surface-warm">
+      {/* Philosophy - Two Column Layout */}
+      <section className="py-20 md:py-32 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-12"
-          >
-            Philosophy
-          </motion.p>
-          
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="font-serif text-[clamp(1.75rem,4vw,3rem)] text-foreground leading-[1.3] mb-16"
-          >
-            Architecture must be experienced, not just seen.
-          </motion.h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            {/* Left - Text Content */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10">
+                Design Philosophy
+              </h2>
+              
+              <div className="space-y-6 text-base text-muted-foreground leading-relaxed text-justify">
+                <p>
+                  At Tro.ts Architects, we believe architecture must be experienced, not just seen. 
+                  Spaces have the power to influence emotions, behaviour, and well-being, and our 
+                  design philosophy stems from this understanding.
+                </p>
+                <p>
+                  Every project is approached as unique, shaped by its context, user needs, and 
+                  environmental conditions. Rather than imposing a singular style, we allow design 
+                  to evolve organically—guided by site, light, wind, materials, and human movement. 
+                  Simplicity, clarity, and authenticity form the foundation of our work, enhanced 
+                  by thoughtful detailing and contemporary innovation.
+                </p>
+                <p>
+                  We respond to both micro and macro factors—from climate and topography to lifestyle 
+                  and cultural narratives. By integrating architecture, interiors, landscape, and 
+                  lighting as one cohesive whole, we ensure harmony across all scales of design. 
+                  Through all these years, we have learnt that architecture is a matter of 
+                  transformation—of perspectives, ideas and thoughts that help us create spaces 
+                  that become timeless.
+                </p>
+              </div>
+            </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
+            {/* Right - Image */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="relative"
             >
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Spaces have the power to influence emotions, behaviour, and well-being. 
-                Every project is approached as unique, shaped by its context, user needs, 
-                and environmental conditions.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Rather than imposing a singular style, we allow design to evolve 
-                organically—guided by site, light, wind, materials, and human movement.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <p className="text-base text-muted-foreground leading-relaxed">
-                Simplicity, clarity, and authenticity form the foundation of our work, 
-                enhanced by thoughtful detailing and contemporary innovation.
-              </p>
+              <img
+                src="/lovable-uploads/192d3737-4e83-46ab-8dd3-bb0ce887237a.jpg"
+                alt="Interior design by Trots Architects"
+                className="w-full h-full object-cover min-h-[400px] lg:min-h-[500px]"
+              />
             </motion.div>
           </div>
         </div>

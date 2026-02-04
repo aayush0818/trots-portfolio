@@ -50,26 +50,29 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
-      {/* Background Images - Simple crossfade with slow zoom */}
-      <AnimatePresence mode="sync">
+      {/* Background Images - Smooth crossfade with slow zoom */}
+      {heroImages.map((image, index) => (
         <motion.div
-          key={currentIndex}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
+          key={index}
+          initial={false}
+          animate={{ 
+            opacity: index === currentIndex ? 1 : 0,
+            zIndex: index === currentIndex ? 1 : 0 
+          }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
           <motion.img
+            key={`img-${index}-${currentIndex === index}`}
             initial={{ scale: 1 }}
-            animate={{ scale: 1.08 }}
-            transition={{ duration: 12, ease: "linear" }}
-            src={heroImages[currentIndex]}
+            animate={{ scale: currentIndex === index ? 1.08 : 1 }}
+            transition={{ duration: 10, ease: "linear" }}
+            src={image}
             alt="Architecture"
             className="w-full h-full object-cover"
           />
         </motion.div>
-      </AnimatePresence>
+      ))}
 
       {/* Subtle vignette overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />

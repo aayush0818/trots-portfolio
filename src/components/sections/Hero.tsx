@@ -80,8 +80,11 @@ const Hero = () => {
               className="w-14 h-auto"
               style={{ filter: "brightness(0) invert(1)" }}
             />
-            <span className="font-serif text-lg text-white tracking-wide">
-              Trots Architects
+            <span 
+              className="text-lg text-white tracking-wide"
+              style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
+            >
+              T<span style={{ fontStyle: 'italic' }}>r</span>.ots Architects
             </span>
           </Link>
 

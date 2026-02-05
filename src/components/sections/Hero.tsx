@@ -49,7 +49,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden bg-black">
+    <section className="relative h-screen h-[100dvh] min-h-[500px] overflow-hidden bg-black">
       {/* Background Images - Smooth crossfade with slow zoom */}
       {heroImages.map((image, index) => (
         <motion.div
@@ -75,26 +75,26 @@ const Hero = () => {
       ))}
 
       {/* Subtle vignette overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/20 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 pointer-events-none" />
 
       {/* Navigation */}
       <motion.header 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="absolute top-0 left-0 right-0 z-30 px-6 md:px-12 py-6"
+        className="absolute top-0 left-0 right-0 z-30 px-4 sm:px-6 md:px-12 py-4 sm:py-6"
       >
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3">
             <img
               src={trotsLogo}
               alt="Trots"
-              className="w-14 h-auto"
+              className="w-10 sm:w-14 h-auto"
               style={{ filter: "brightness(0) invert(1)" }}
             />
             <span 
-              className="text-lg text-white tracking-wide"
+              className="text-sm sm:text-lg text-white tracking-wide"
               style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
             >
               T<span style={{ fontStyle: 'italic' }}>r</span>o.ts Architects
@@ -117,9 +117,9 @@ const Hero = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-1"
           >
-            <Menu className="w-6 h-6" />
+            <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </nav>
       </motion.header>
@@ -135,11 +135,11 @@ const Hero = () => {
           >
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="absolute top-6 right-6 text-white text-2xl"
+              className="absolute top-4 right-4 sm:top-6 sm:right-6 text-white text-2xl p-2"
             >
               ×
             </button>
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-6 sm:gap-8">
               {navItems.map((item, i) => (
                 <motion.div
                   key={item.name}
@@ -150,7 +150,7 @@ const Hero = () => {
                   <Link
                     to={item.path}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-serif text-3xl text-white"
+                    className="font-serif text-2xl sm:text-3xl text-white"
                   >
                     {item.name}
                   </Link>
@@ -166,31 +166,31 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-0 left-0 right-0 z-20 px-6 md:px-12 py-6 flex items-center justify-between"
+        className="absolute bottom-0 left-0 right-0 z-20 px-4 sm:px-6 md:px-12 py-4 sm:py-6 flex items-center justify-between"
       >
-        {/* Copyright */}
-        <p className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/60">
-          © {new Date().getFullYear()} Trots Architects
+        {/* Copyright - hidden on very small screens */}
+        <p className="hidden sm:block text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/60">
+          © {new Date().getFullYear()} Trots
         </p>
 
-        {/* Slide indicators */}
-        <div className="flex gap-3">
+        {/* Slide indicators - centered on mobile, simplified */}
+        <div className="flex gap-2 sm:gap-3 mx-auto sm:mx-0">
           {heroImages.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`h-[2px] transition-all duration-700 ${
                 index === currentIndex 
-                  ? "w-8 bg-white" 
-                  : "w-4 bg-white/40 hover:bg-white/60"
+                  ? "w-5 sm:w-8 bg-white" 
+                  : "w-2 sm:w-4 bg-white/40 hover:bg-white/60"
               }`}
               aria-label={`Slide ${index + 1}`}
             />
           ))}
         </div>
 
-        {/* Social icons */}
-        <div className="flex items-center gap-4">
+        {/* Social icons - hidden on very small screens */}
+        <div className="hidden sm:flex items-center gap-3 md:gap-4">
           <a 
             href="https://instagram.com" 
             target="_blank" 

@@ -66,7 +66,7 @@ const About = () => {
             </p>
             <h2 className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">
               Trots Architects was established in 2020 as a multidisciplinary 
-              practice rooted in contextual sensitivity and experiential design.
+              practice rooted in contextual sensitivity and thoughtful design.
             </h2>
           </motion.div>
           <motion.div initial={{
@@ -83,12 +83,12 @@ const About = () => {
         }} className="flex flex-col justify-end space-y-5">
             <p className="text-base text-muted-foreground leading-relaxed">
               The studio believes that architecture extends beyond built form, 
-              shaping experiences through space, light, materiality, climate, and nature.
+              shaping experiences through space, light, materiality, climate and nature.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Each project is approached as a response to its surroundings—where 
+              Each project is approached as a response to its surrounding where 
               built and unbuilt elements merge seamlessly to create spaces that 
-              feel intuitive, grounded, and enduring.
+              feel intuitive, grounded and enduring.
             </p>
           </motion.div>
         </div>
@@ -117,22 +117,22 @@ const About = () => {
               <div className="space-y-6 text-base text-muted-foreground leading-relaxed text-justify">
                 <p>
                   At Tro.ts Architects, we believe architecture must be experienced, not just seen. 
-                  Spaces have the power to influence emotions, behaviour, and well-being, and our 
+                  Spaces have the power to influence emotions, behaviour and well-being, and our 
                   design philosophy stems from this understanding.
                 </p>
                 <p>
-                  Every project is approached as unique, shaped by its context, user needs, and 
+                  Every project is approached as unique, shaped by its context, user needs and 
                   environmental conditions. Rather than imposing a singular style, we allow design 
-                  to evolve organically—guided by site, light, wind, materials, and human movement. 
-                  Simplicity, clarity, and authenticity form the foundation of our work, enhanced 
+                  to evolve organically, guided by site, light, wind, materials and human movement. 
+                  Simplicity, clarity and authenticity form the foundation of our work, enhanced 
                   by thoughtful detailing and contemporary innovation.
                 </p>
                 <p>
-                  We respond to both micro and macro factors—from climate and topography to lifestyle 
-                  and cultural narratives. By integrating architecture, interiors, landscape, and 
+                  We respond to both micro and macro factors, from climate and topography to lifestyle 
+                  and cultural narratives. By integrating architecture, interiors, landscape and 
                   lighting as one cohesive whole, we ensure harmony across all scales of design. 
                   Through all these years, we have learnt that architecture is a matter of 
-                  transformation—of perspectives, ideas and thoughts that help us create spaces 
+                  transformation of perspectives, ideas and thoughts that help us create spaces 
                   that become timeless.
                 </p>
               </div>
@@ -215,13 +215,14 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-end space-y-5">
               <p className="text-base text-muted-foreground leading-relaxed">
-                We respond to both micro and macro factors—from climate and topography 
-                to lifestyle and cultural narratives. By integrating architecture, interiors, 
-                landscape, and lighting as one cohesive whole, we ensure harmony across all scales.
+                We design with an emphasis on human experience—how spaces are perceived, 
+                inhabited and emotionally felt. By carefully calibrating scale, proportion, 
+                movement and materiality, we create environments that foster comfort, 
+                connection and well-being.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 We draw inspiration from traditional concepts and craftsmanship while 
-                continuously exploring modern materials, techniques, and technologies.
+                continuously exploring modern materials, techniques and technologies.
               </p>
             </div>
           </motion.div>
@@ -231,7 +232,7 @@ const About = () => {
             {[{
             num: "01",
             title: "Discovery",
-            desc: "Understanding vision, lifestyle, and functional needs"
+            desc: "Understanding vision, lifestyle and functional needs"
           }, {
             num: "02",
             title: "Context",
@@ -239,7 +240,7 @@ const About = () => {
           }, {
             num: "03",
             title: "Concept",
-            desc: "Ideas inspired by nature, light, and movement"
+            desc: "Ideas inspired by nature, light and movement"
           }, {
             num: "04",
             title: "Design",

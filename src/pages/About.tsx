@@ -190,18 +190,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Second Image */}
-      <motion.section initial={{
-      opacity: 0
-    }} whileInView={{
-      opacity: 1
-    }} viewport={{
-      once: true
-    }} transition={{
-      duration: 1
-    }} className="relative h-[50vh] md:h-[70vh]">
-        
-      </motion.section>
 
       {/* Design Approach */}
       <section className="py-20 md:py-32 px-6 md:px-16">

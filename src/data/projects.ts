@@ -23,6 +23,13 @@ import coxTown1 from "@/assets/cox-town-1.jpg";
 import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import basavaraj3 from "@/assets/basavaraj-3.jpg";
+import basavarajGroundFloor from "@/assets/basavaraj-ground-floor.jpg";
+import basavarajFirstFloor from "@/assets/basavaraj-first-floor.jpg";
+import basavarajSecondFloor from "@/assets/basavaraj-second-floor.jpg";
+import basavarajTerraceFloor from "@/assets/basavaraj-terrace-floor.jpg";
+import basavarajPerspective from "@/assets/basavaraj-perspective.jpg";
+import basavarajFrontView from "@/assets/basavaraj-front-view.jpg";
+import basavarajSideView from "@/assets/basavaraj-side-view.jpg";
 import vedham from "@/assets/vedham.jpg";
 import nandhyal from "@/assets/nandhyal.jpg";
 
@@ -97,7 +104,7 @@ export const projects: Project[] = [
     type: "Residential",
     status: "Proposed",
     heroImage: basavaraj1,
-    images: [basavaraj1, basavaraj2, basavaraj3],
+    images: [basavaraj1, basavaraj2, basavaraj3, basavarajGroundFloor, basavarajFirstFloor, basavarajSecondFloor, basavarajTerraceFloor, basavarajPerspective, basavarajFrontView, basavarajSideView],
     description:
       "Proposed independent residence exploring brick jali screens, integrated planters, and climate-responsive massing. The design draws on local craft traditions while addressing contemporary living.",
   },

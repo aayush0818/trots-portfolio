@@ -43,9 +43,9 @@ const Header = () => {
             className={`text-lg tracking-wide transition-colors duration-300 ${
               isDarkBackground ? "text-white" : "text-foreground"
             }`}
-            style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 400 }}
+            style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}
           >
-            T<span style={{ fontStyle: 'italic' }}>r</span>o.ts Architects
+            Tro.ts Architects
           </span>
         </Link>
 

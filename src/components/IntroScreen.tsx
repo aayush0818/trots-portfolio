@@ -57,13 +57,13 @@ const IntroScreen = ({ onComplete }: IntroScreenProps) => {
           >
             <h1 
               className="text-2xl tracking-wide text-foreground"
-              style={{ fontFamily: "'Sora', sans-serif", fontWeight: 400 }}
+              style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 400 }}
             >
               T<span style={{ fontStyle: 'italic', letterSpacing: '-0.02em' }}>r</span>o.ts Architects
             </h1>
             <p 
               className="mt-2 text-micro uppercase tracking-widest text-muted-foreground"
-              style={{ fontFamily: "'Sora', sans-serif", fontWeight: 300 }}
+              style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}
             >
               Tropical Thoughts
             </p>

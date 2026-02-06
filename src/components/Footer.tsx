@@ -14,7 +14,7 @@ const Footer = () => {
                 alt="Trots Architects"
                 className="w-12 h-auto"
               />
-              <span style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}>Tro.ts Architects</span>
+              <span style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}>T<span style={{ fontStyle: 'italic' }}>r</span>o.ts Architects</span>
             </div>
             <p className="text-caption text-muted-foreground leading-relaxed">
               Context-driven architecture rooted<br />

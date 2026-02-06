@@ -26,10 +26,11 @@ const ContactSection = () => {
 
           <div>
             <p className="text-micro uppercase tracking-widest text-muted-foreground mb-2">
-              Location
+              Address
             </p>
             <p className="text-body-lg text-foreground">
-              Bengaluru, India
+              15, 4th Cross, 2nd Block<br />
+              BSK 1st Stage, Bangalore 560050
             </p>
           </div>
 
@@ -38,10 +39,10 @@ const ContactSection = () => {
               Email
             </p>
             <a
-              href="mailto:studio@trotsarchitects.com"
+              href="mailto:trotsarchitects@gmail.com"
               className="arch-link text-body-lg text-foreground inline-block"
             >
-              studio@trotsarchitects.com
+              trotsarchitects@gmail.com
             </a>
           </div>
 
@@ -49,12 +50,20 @@ const ContactSection = () => {
             <p className="text-micro uppercase tracking-widest text-muted-foreground mb-2">
               Phone
             </p>
-            <a
-              href="tel:+918012345678"
-              className="arch-link text-body-lg text-foreground inline-block"
-            >
-              +91 80 1234 5678
-            </a>
+            <div className="space-y-1">
+              <a
+                href="tel:+919663476666"
+                className="arch-link text-body-lg text-foreground block"
+              >
+                Nandesh — +91 96634 76666
+              </a>
+              <a
+                href="tel:+919738742605"
+                className="arch-link text-body-lg text-foreground block"
+              >
+                Nikitha — +91 97387 42605
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>

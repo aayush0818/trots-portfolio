@@ -72,10 +72,10 @@ const Contact = () => {
                     Email
                   </p>
                   <a
-                    href="mailto:studio@trotsarchitects.com"
+                    href="mailto:trotsarchitects@gmail.com"
                     className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors"
                   >
-                    studio@trotsarchitects.com
+                    trotsarchitects@gmail.com
                   </a>
                 </div>
 
@@ -83,20 +83,30 @@ const Contact = () => {
                   <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
                     Phone
                   </p>
-                  <a
-                    href="tel:+918012345678"
-                    className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors"
-                  >
-                    +91 80 1234 5678
-                  </a>
+                  <div className="space-y-2">
+                    <a
+                      href="tel:+919663476666"
+                      className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors block"
+                    >
+                      Nandesh — +91 96634 76666
+                    </a>
+                    <a
+                      href="tel:+919738742605"
+                      className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors block"
+                    >
+                      Nikitha — +91 97387 42605
+                    </a>
+                  </div>
                 </div>
 
                 <div>
                   <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
-                    Location
+                    Address
                   </p>
                   <p className="font-serif text-xl md:text-2xl text-foreground">
-                    Bengaluru, India
+                    15, 4th Cross, 2nd Block<br />
+                    BSK 1st Stage<br />
+                    Bangalore 560050
                   </p>
                 </div>
               </div>

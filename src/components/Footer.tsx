@@ -46,11 +46,11 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-body text-foreground">
-              <p>Bengaluru, India</p>
-              <a href="mailto:studio@trotsarchitects.com" className="arch-link inline-block">
-                studio@trotsarchitects.com
+              <p>15, 4th Cross, 2nd Block<br />BSK 1st Stage, Bangalore 560050</p>
+              <a href="mailto:trotsarchitects@gmail.com" className="arch-link inline-block">
+                trotsarchitects@gmail.com
               </a>
-              <p>+91 80 1234 5678</p>
+              <p>+91 96634 76666 / +91 97387 42605</p>
             </div>
           </div>
         </div>

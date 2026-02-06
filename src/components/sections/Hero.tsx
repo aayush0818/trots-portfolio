@@ -97,7 +97,7 @@ const Hero = () => {
               className="text-sm sm:text-lg text-white tracking-wide"
               style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}
             >
-              Tro.ts Architects
+              T<span style={{ fontStyle: 'italic' }}>r</span>o.ts Architects
             </span>
           </Link>
 

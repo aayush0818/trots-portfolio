@@ -7,26 +7,28 @@ import trotsLogo from "@/assets/trots-logo.png";
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
 import gvknTerrace from "@/assets/gvkn-terrace-1.jpg";
-import gvknDining from "@/assets/gvkn-dining.jpg";
-import basavaraj1 from "@/assets/basavaraj-1.jpg";
 import basavaraj2 from "@/assets/basavaraj-2.jpg";
 import carouselStaircase from "@/assets/carousel-staircase.png";
 import carouselArtNiche from "@/assets/carousel-art-niche.png";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
+import carouselDecorNiche from "@/assets/carousel-decor-niche.jpg";
+import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
+import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
 const heroImages = [
   gvknHero,
-  basavaraj1,
+  carouselStairwellTop,
   carouselStaircase,
   gvknTerrace,
   carouselDining,
   basavaraj2,
   carouselBedroom,
-  gvknDining,
+  carouselExteriorStreet,
   carouselArtNiche,
   carouselExterior,
+  carouselDecorNiche,
 ];
 
 const Hero = () => {

@@ -170,8 +170,8 @@ const Hero = () => {
         transition={{ delay: 1 }}
         className="absolute bottom-0 left-0 right-0 z-20 px-4 sm:px-6 md:px-12 py-4 sm:py-6 flex items-center justify-between"
       >
-        {/* Copyright - hidden on very small screens */}
-        <p className="hidden sm:block text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/60">
+        {/* Copyright */}
+        <p className="text-[9px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.2em] text-white/60">
           © {new Date().getFullYear()} Trots
         </p>
 
@@ -191,7 +191,7 @@ const Hero = () => {
           ))}
         </div>
 
-        <div className="hidden sm:flex items-center gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4">
           <a 
             href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA==" 
             target="_blank" 

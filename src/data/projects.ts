@@ -32,7 +32,7 @@ import basavarajFrontView from "@/assets/basavaraj-front-view.jpg";
 import basavarajSideView from "@/assets/basavaraj-side-view.jpg";
 import vedham from "@/assets/vedham.jpg";
 import nandhyal from "@/assets/nandhyal.jpg";
-import hrbrCommercial from "@/assets/hrbr-commercial.jpg";
+
 
 export interface Project {
   id: string;
@@ -108,17 +108,6 @@ export const projects: Project[] = [
     images: [basavaraj1, basavaraj2, basavaraj3, basavarajGroundFloor, basavarajFirstFloor, basavarajSecondFloor, basavarajTerraceFloor, basavarajPerspective, basavarajFrontView, basavarajSideView],
     description:
       "Basavaraj Residence is an independent residential villa designed on a 30' × 60' site along Kanakapura Road, Bengaluru. Planned as a 3 BHK home, the design focuses on comfortable family living within a compact plot. The house is organized around well-defined living, dining, and private spaces ensuring clear zoning and efficient circulation. Openings, balconies, and internal cut-outs allow for ample natural light and ventilation, creating bright and comfortable interiors. Landscape pockets and terraces are thoughtfully integrated to enhance indoor–outdoor connection, while the overall architectural expression remains simple, functional, and contemporary, responding to the residential character of the neighbourhood.",
-  },
-  {
-    id: "hrbr-commercial",
-    name: "Commercial Building HRBR",
-    location: "HRBR, Bangalore",
-    type: "Commercial",
-    status: "Proposed",
-    heroImage: hrbrCommercial,
-    images: [hrbrCommercial],
-    description:
-      "A commercial building designed in the HRBR layout of Bangalore, addressing the functional and spatial requirements of a mixed-use commercial programme within an urban setting.",
   },
   {
     id: "vedham",

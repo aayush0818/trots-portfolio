@@ -34,15 +34,15 @@ const Philosophy = () => {
           <div className="space-y-6 text-body text-muted-foreground">
             <p>
               Trots Architects was established in 2020 as a multidisciplinary
-              practice rooted in contextual sensitivity and experiential design.
+              architectural practice rooted in contextual sensitivity and experiential design.
             </p>
             <p>
-              The studio believes architecture extends beyond built form, shaping
-              experience through space, light, materiality, climate, and nature.
+              The studio believes that architecture extends beyond built form, shaping
+              experiences through space, light, materiality, climate and nature.
             </p>
             <p>
-              Each project responds to its surroundings, allowing built and unbuilt
-              elements to merge seamlessly, creating spaces that feel intuitive,
+              Each project is approached as a response to its surroundings where
+              built and unbuilt elements merge seamlessly to create spaces that feel intuitive,
               grounded, and enduring.
             </p>
           </div>

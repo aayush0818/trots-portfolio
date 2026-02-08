@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Instagram, Linkedin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Input } from "@/components/ui/input";
@@ -112,11 +112,29 @@ const Contact = () => {
               </div>
 
               <div className="mt-16 pt-12 border-t border-border">
-                <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mb-6">
                   For project inquiries, collaborations, or general questions—
                   we're interested in meaningful conversations about architecture, 
                   context, and craft.
                 </p>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/tro-ts-architects/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                </div>
               </div>
             </motion.div>
 

@@ -109,32 +109,40 @@ const Contact = () => {
                     Bangalore 560050
                   </p>
                 </div>
+
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-4">
+                    Follow
+                  </p>
+                  <div className="flex items-center gap-6">
+                    <a
+                      href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors"
+                    >
+                      <Instagram className="w-5 h-5" />
+                      <span className="font-serif text-lg md:text-xl">Instagram</span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/tro-ts-architects/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                      <span className="font-serif text-lg md:text-xl">LinkedIn</span>
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div className="mt-16 pt-12 border-t border-border">
-                <p className="text-sm text-muted-foreground leading-relaxed max-w-sm mb-6">
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
                   For project inquiries, collaborations, or general questions—
                   we're interested in meaningful conversations about architecture, 
                   context, and craft.
                 </p>
-                <div className="flex items-center gap-4">
-                  <a
-                    href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <Instagram className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/tro-ts-architects/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                </div>
               </div>
             </motion.div>
 

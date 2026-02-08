@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-background border-t border-divider">
       <div className="px-gutter py-section">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
           {/* Studio Info */}
-          <div>
+          <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img
                 src={trotsLogo}
@@ -17,10 +17,28 @@ const Footer = () => {
               />
               <span style={{ fontFamily: "'Sansation', sans-serif", fontWeight: 300 }}>Tro.ts Architects</span>
             </div>
-            <p className="text-caption text-muted-foreground leading-relaxed">
-              Context-driven architecture rooted<br />
+            <p className="text-caption text-muted-foreground leading-relaxed max-w-xs mb-8">
+              Context-driven architecture rooted
               in experience, climate, and place.
             </p>
+            <div className="flex items-center gap-5">
+              <a
+                href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Instagram className="w-[18px] h-[18px]" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/tro-ts-architects/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <Linkedin className="w-[18px] h-[18px]" />
+              </a>
+            </div>
           </div>
 
           {/* Navigation */}
@@ -33,7 +51,7 @@ const Footer = () => {
                 Works
               </Link>
               <Link to="/about" className="arch-link text-body text-foreground inline-block">
-                About
+                Studio
               </Link>
               <Link to="/contact" className="arch-link text-body text-foreground inline-block">
                 Contact
@@ -47,37 +65,22 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-body text-foreground">
-              <p>15, 4th Cross, 2nd Block<br />BSK 1st Stage, Bangalore 560050</p>
               <a href="mailto:trotsarchitects@gmail.com" className="arch-link inline-block">
                 trotsarchitects@gmail.com
               </a>
-              <p>+91 96634 76666 / +91 97387 42605</p>
+              <p>+91 96634 76666<br />+91 97387 42605</p>
+              <p className="text-caption text-muted-foreground">
+                15, 4th Cross, 2nd Block<br />BSK 1st Stage, Bangalore 560050
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-section pt-8 border-t border-divider flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        {/* Bottom */}
+        <div className="mt-section pt-8 border-t border-divider">
           <p className="text-caption text-muted-foreground">
             © {new Date().getFullYear()} Trots Architects. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Instagram className="w-4 h-4" />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/tro-ts-architects/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Linkedin className="w-4 h-4" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

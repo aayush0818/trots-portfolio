@@ -3,33 +3,33 @@ import { motion } from "framer-motion";
 const processSteps = [
   {
     number: "01",
-    title: "Understanding and Discovery",
+    title: "Understanding & Discovery",
     description:
-      "Deep engagement to understand vision, lifestyle, and functional needs.",
+      "Deep engagement with clients to understand vision, lifestyle, functional needs, and aspirations.",
   },
   {
     number: "02",
     title: "Contextual Analysis",
     description:
-      "Site, climate, movement, and environmental response.",
+      "Site study, climate response, spatial flow, and environmental considerations.",
   },
   {
     number: "03",
     title: "Concept Development",
     description:
-      "Ideas translated into spatial concepts inspired by light, nature, and movement.",
+      "Translating ideas into clear design concepts inspired by nature, light, and movement.",
   },
   {
     number: "04",
     title: "Design Development",
     description:
-      "Detailed architectural and interior planning with material clarity.",
+      "Detailed architectural and interior planning with material and spatial coherence.",
   },
   {
     number: "05",
     title: "Execution Support",
     description:
-      "Design coordination and site involvement to ensure intent is realized.",
+      "Design coordination and on-site involvement to ensure faithful realization of intent.",
   },
 ];
 
@@ -47,7 +47,8 @@ const Process = () => {
           Design Approach
         </h2>
         <p className="text-body text-muted-foreground">
-          A considered process that respects context and prioritizes craft.
+          Our design process is context-driven and human-centric, responding to 
+          climate, topography, lifestyle, and cultural narratives.
         </p>
       </motion.div>
 

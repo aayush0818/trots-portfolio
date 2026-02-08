@@ -65,8 +65,8 @@ const About = () => {
               About
             </p>
             <h2 className="font-serif text-2xl md:text-3xl text-foreground leading-relaxed">
-              Trots Architects was established in 2020 as a multidisciplinary 
-              practice rooted in contextual sensitivity and thoughtful design.
+              Trots Architects was established in 2020 as a multidisciplinary architectural 
+              practice rooted in contextual sensitivity and experiential design.
             </h2>
           </motion.div>
           <motion.div initial={{
@@ -86,9 +86,11 @@ const About = () => {
               shaping experiences through space, light, materiality, climate and nature.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Each project is approached as a response to its surrounding where 
+              Each project is approached as a response to its surroundings where 
               built and unbuilt elements merge seamlessly to create spaces that 
-              feel intuitive, grounded and enduring.
+              feel intuitive, grounded, and enduring. By engaging with climate, landscape, 
+              culture, and human movement, the practice strives to design environments 
+              that are calm, meaningful, and deeply connected to place.
             </p>
           </motion.div>
         </div>
@@ -111,29 +113,21 @@ const About = () => {
             duration: 0.8
           }}>
               <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-10">
-                Design Philosophy
+                Studio Philosophy
               </h2>
               
               <div className="space-y-6 text-base text-muted-foreground leading-relaxed text-justify">
                 <p>
                   At Tro.ts Architects, we believe architecture must be experienced, not just seen. 
-                  Spaces have the power to influence emotions, behaviour and well-being, and our 
+                  Spaces have the power to influence emotions, behaviour, well-being and our 
                   design philosophy stems from this understanding.
                 </p>
                 <p>
                   Every project is approached as unique, shaped by its context, user needs and 
                   environmental conditions. Rather than imposing a singular style, we allow design 
-                  to evolve organically, guided by site, light, wind, materials and human movement. 
-                  Simplicity, clarity and authenticity form the foundation of our work, enhanced 
+                  to evolve organically—guided by site, light, wind, materials, and human movement. 
+                  Simplicity, clarity, and authenticity form the foundation of our work, enhanced 
                   by thoughtful detailing and contemporary innovation.
-                </p>
-                <p>
-                  We respond to both micro and macro factors, from climate and topography to lifestyle 
-                  and cultural narratives. By integrating architecture, interiors, landscape and 
-                  lighting as one cohesive whole, we ensure harmony across all scales of design. 
-                  Through all these years, we have learnt that architecture is a matter of 
-                  transformation of perspectives, ideas and thoughts that help us create spaces 
-                  that become timeless.
                 </p>
               </div>
             </motion.div>
@@ -215,14 +209,16 @@ const About = () => {
             </div>
             <div className="flex flex-col justify-end space-y-5">
               <p className="text-base text-muted-foreground leading-relaxed">
-                We design with an emphasis on human experience—how spaces are perceived, 
-                inhabited and emotionally felt. By carefully calibrating scale, proportion, 
-                movement and materiality, we create environments that foster comfort, 
-                connection and well-being.
+                Our design process is context-driven and human-centric. We respond to both 
+                micro and macro factors—from climate and topography to lifestyle and cultural 
+                narratives. By integrating architecture, interiors, landscape, and lighting 
+                as one cohesive whole, we ensure harmony across all scales of design.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 We draw inspiration from traditional concepts and craftsmanship while 
-                continuously exploring modern materials, techniques and technologies.
+                continuously exploring modern materials, techniques, and technologies. 
+                This balance allows us to create spaces that are functional, emotionally 
+                resonant, and enduring.
               </p>
             </div>
           </motion.div>
@@ -231,24 +227,24 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6">
             {[{
             num: "01",
-            title: "Discovery",
-            desc: "Understanding vision, lifestyle and functional needs"
+            title: "Understanding & Discovery",
+            desc: "Deep engagement with clients to understand vision, lifestyle, functional needs, and aspirations."
           }, {
             num: "02",
-            title: "Context",
-            desc: "Site study, climate response, environmental considerations"
+            title: "Contextual Analysis",
+            desc: "Site study, climate response, spatial flow, and environmental considerations."
           }, {
             num: "03",
-            title: "Concept",
-            desc: "Ideas inspired by nature, light and movement"
+            title: "Concept Development",
+            desc: "Translating ideas into clear design concepts inspired by nature, light, and movement."
           }, {
             num: "04",
-            title: "Design",
-            desc: "Detailed planning with material coherence"
+            title: "Design Development",
+            desc: "Detailed architectural and interior planning with material and spatial coherence."
           }, {
             num: "05",
-            title: "Execution",
-            desc: "On-site coordination ensuring faithful realization"
+            title: "Execution Support",
+            desc: "Design coordination and on-site involvement to ensure faithful realization of intent."
           }].map((step, i) => <motion.div key={step.num} initial={{
             opacity: 0,
             y: 15
@@ -370,10 +366,12 @@ const About = () => {
                 Studio Head
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                An alumnus of Dayananda Sagar College of Architecture, Nandesh completed 
+                An alumnus of Dayananda Sagar College of Architecture, Nandesh GK completed 
                 his Bachelor of Architecture in 2017. His design interest lies in creating 
                 context-responsive architecture that balances functionality, materiality, 
-                and spatial clarity.
+                and spatial clarity. He is passionate about shaping built environments that 
+                are sensitive to climate and human experience, contributing meaningfully to 
+                the evolving urban fabric.
               </p>
             </motion.div>
 
@@ -399,10 +397,13 @@ const About = () => {
                 Studio Head
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Nikitha completed her Bachelor of Architecture from SJB School of 
-                Architecture and Planning in 2019, and earned her Master's in Urban Design 
-                from BMS School of Architecture in 2022. Her focus is on people-centric 
-                and sustainable design.
+                Nikitha GS completed her Bachelor of Architecture from SJB School of 
+                Architecture and Planning, Bengaluru, in 2019, and earned her Master's 
+                degree in Urban Design from BMS School of Architecture in 2022. Her design 
+                interest lies in understanding cities and spaces across multiple scales, 
+                with a strong focus on people-centric and sustainable design. She is 
+                passionate about creating built environments that enhance spatial quality, 
+                strengthen the urban fabric, and contribute positively to society.
               </p>
             </motion.div>
           </div>
@@ -412,7 +413,7 @@ const About = () => {
       {/* Experience Note */}
       <section className="py-20 md:py-28 px-6 md:px-16 bg-surface-warm">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.p initial={{
+          <motion.div initial={{
           opacity: 0,
           y: 20
         }} whileInView={{
@@ -422,11 +423,17 @@ const About = () => {
           once: true
         }} transition={{
           duration: 0.8
-        }} className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Founded in 2020, the studio's work reflects continuous evolution through 
-            diverse project typologies, challenges, and site conditions—enabling a 
-            mature and sensitive design response.
-          </motion.p>
+        }}>
+            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
+              Years of Experience
+            </p>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Founded in 2020, Trots Architects brings together professional experience 
+              across architectural design, interior design, and project execution. The 
+              studio's work reflects a continuous evolution through diverse project typologies, 
+              challenges, and site conditions, enabling a mature and sensitive design response.
+            </p>
+          </motion.div>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram, Linkedin } from "lucide-react";
 import trotsLogo from "@/assets/trots-logo.png";
 
 const Footer = () => {
@@ -55,11 +56,28 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-section pt-8 border-t border-divider">
+        <div className="mt-section pt-8 border-t border-divider flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <p className="text-caption text-muted-foreground">
             © {new Date().getFullYear()} Trots Architects. All rights reserved.
           </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA=="
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/tro-ts-architects/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

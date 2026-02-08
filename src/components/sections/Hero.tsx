@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Menu, Instagram, Linkedin } from "lucide-react";
 import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
@@ -191,10 +191,9 @@ const Hero = () => {
           ))}
         </div>
 
-        {/* Social icons - hidden on very small screens */}
         <div className="hidden sm:flex items-center gap-3 md:gap-4">
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/trots.architects?igsh=MWowaGlpaHk3azhzOA==" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-300"
@@ -202,20 +201,12 @@ const Hero = () => {
             <Instagram className="w-4 h-4" />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/company/tro-ts-architects/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white/60 hover:text-white transition-colors duration-300"
           >
             <Linkedin className="w-4 h-4" />
-          </a>
-          <a 
-            href="https://facebook.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white/60 hover:text-white transition-colors duration-300"
-          >
-            <Facebook className="w-4 h-4" />
           </a>
         </div>
       </motion.div>

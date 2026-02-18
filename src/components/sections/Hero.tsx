@@ -67,7 +67,7 @@ const Hero = () => {
           <img
             src={image}
             alt="Architecture"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center lg:object-[center_40%]"
           />
         </motion.div>
       ))}

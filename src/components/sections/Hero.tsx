@@ -51,7 +51,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative h-screen h-[100dvh] min-h-[500px] overflow-hidden bg-black">
+    <section className="relative h-[100dvh] lg:h-[85vh] min-h-[500px] overflow-hidden bg-black">
       {/* Background Images - Smooth crossfade with slow zoom */}
       {heroImages.map((image, index) => (
         <motion.div
@@ -67,7 +67,7 @@ const Hero = () => {
           <img
             src={image}
             alt="Architecture"
-            className="w-full h-full object-cover object-center lg:object-[center_40%]"
+            className="w-full h-full object-cover object-center"
           />
         </motion.div>
       ))}

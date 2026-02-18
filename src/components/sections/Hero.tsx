@@ -40,7 +40,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 2500); // Faster: 2.5 seconds per slide
+    const timer = setInterval(nextSlide, 60000); // Temp: slow for review
     return () => clearInterval(timer);
   }, [nextSlide]);
 

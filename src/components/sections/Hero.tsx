@@ -62,12 +62,13 @@ const Hero = () => {
             zIndex: index === currentIndex ? 1 : 0 
           }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0 flex items-center justify-center bg-black"
+          className="absolute inset-0"
         >
           <img
             src={image.src}
             alt="Architecture"
-            className="max-w-full max-h-full w-auto h-auto"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: image.position }}
           />
         </motion.div>
       ))}

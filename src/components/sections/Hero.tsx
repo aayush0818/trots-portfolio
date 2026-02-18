@@ -18,17 +18,17 @@ import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
 const heroImages = [
-  { src: gvknHero, position: "center 40%" },           // Residence hero - show more of building, less sky
-  { src: carouselStairwellTop, position: "center 30%" }, // Stairwell from top - show upper structure
-  { src: carouselStaircase, position: "center center" }, // Person on staircase - centered works
-  { src: gvknTerrace, position: "center 60%" },          // Terrace garden - show more greenery
-  { src: carouselDining, position: "center center" },    // Dining room - centered
-  { src: basavaraj2, position: "center 45%" },           // Building exterior - show full facade
-  { src: carouselBedroom, position: "center center" },   // Bedroom interior - centered
-  { src: carouselExteriorStreet, position: "center 55%" }, // Street view - show building + ground
-  { src: carouselArtNiche, position: "center center" },  // Art niche detail - centered
-  { src: carouselExterior, position: "center 50%" },     // Exterior render - centered
-  { src: carouselDecorNiche, position: "center center" }, // Decor niche - centered
+  { src: gvknHero, position: "center 40%" },             // Residence hero - show building
+  { src: carouselStairwellTop, position: "center 45%" },  // Stairwell from top - show plant + person
+  { src: carouselStaircase, position: "center 35%" },     // Person on staircase - show person + railing
+  { src: gvknTerrace, position: "center 55%" },           // Terrace garden - show greenery + structure
+  { src: carouselDining, position: "center 40%" },        // Dining room - show table + ceiling
+  { src: basavaraj2, position: "center 40%" },            // Building exterior - show full facade
+  { src: carouselBedroom, position: "center 45%" },       // Bedroom - show TV wall + bed
+  { src: carouselExteriorStreet, position: "center 50%" }, // Street view - balanced
+  { src: carouselArtNiche, position: "center 15%" },      // Art niche - focus on the sculpture, not wall
+  { src: carouselExterior, position: "center 50%" },      // Exterior render - centered
+  { src: carouselDecorNiche, position: "center 25%" },    // Decor niche - focus on the niche artwork
 ];
 
 const Hero = () => {

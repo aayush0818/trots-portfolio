@@ -64,14 +64,10 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0"
         >
-          <motion.img
-            key={`img-${index}-${currentIndex === index}`}
-            initial={{ scale: 1 }}
-            animate={{ scale: currentIndex === index ? 1.08 : 1 }}
-            transition={{ duration: 10, ease: "linear" }}
+          <img
             src={image}
             alt="Architecture"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain bg-black"
           />
         </motion.div>
       ))}

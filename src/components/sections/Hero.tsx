@@ -18,17 +18,17 @@ import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
 const heroImages = [
-  gvknHero,
-  carouselStairwellTop,
-  carouselStaircase,
-  gvknTerrace,
-  carouselDining,
-  basavaraj2,
-  carouselBedroom,
-  carouselExteriorStreet,
-  carouselArtNiche,
-  carouselExterior,
-  carouselDecorNiche,
+  { src: gvknHero, position: "center 40%" },           // Residence hero - show more of building, less sky
+  { src: carouselStairwellTop, position: "center 30%" }, // Stairwell from top - show upper structure
+  { src: carouselStaircase, position: "center center" }, // Person on staircase - centered works
+  { src: gvknTerrace, position: "center 60%" },          // Terrace garden - show more greenery
+  { src: carouselDining, position: "center center" },    // Dining room - centered
+  { src: basavaraj2, position: "center 45%" },           // Building exterior - show full facade
+  { src: carouselBedroom, position: "center center" },   // Bedroom interior - centered
+  { src: carouselExteriorStreet, position: "center 55%" }, // Street view - show building + ground
+  { src: carouselArtNiche, position: "center center" },  // Art niche detail - centered
+  { src: carouselExterior, position: "center 50%" },     // Exterior render - centered
+  { src: carouselDecorNiche, position: "center center" }, // Decor niche - centered
 ];
 
 const Hero = () => {
@@ -65,9 +65,10 @@ const Hero = () => {
           className="absolute inset-0"
         >
           <img
-            src={image}
+            src={image.src}
             alt="Architecture"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: image.position }}
           />
         </motion.div>
       ))}

@@ -67,7 +67,7 @@ const Hero = () => {
           <img
             src={image}
             alt="Architecture"
-            className="w-full h-full object-contain bg-black"
+            className="w-full h-full object-cover"
           />
         </motion.div>
       ))}

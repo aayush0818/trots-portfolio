@@ -18,17 +18,17 @@ import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
 const heroImages = [
-  { src: gvknHero, position: "center 40%" },             // Residence hero - show building
-  { src: carouselStairwellTop, position: "center 45%" },  // Stairwell from top - show plant + person
-  { src: carouselStaircase, position: "center 35%" },     // Person on staircase - show person + railing
-  { src: gvknTerrace, position: "center 55%" },           // Terrace garden - show greenery + structure
-  { src: carouselDining, position: "center 40%" },        // Dining room - show table + ceiling
-  { src: basavaraj2, position: "center 40%" },            // Building exterior - show full facade
-  { src: carouselBedroom, position: "center 45%" },       // Bedroom - show TV wall + bed
-  { src: carouselExteriorStreet, position: "center 50%" }, // Street view - balanced
-  { src: carouselArtNiche, position: "center 15%" },      // Art niche - focus on the sculpture, not wall
-  { src: carouselExterior, position: "center 50%" },      // Exterior render - centered
-  { src: carouselDecorNiche, position: "center 25%" },    // Decor niche - focus on the niche artwork
+  { src: gvknHero, position: "center 40%" },             // 1. Residence hero
+  { src: carouselStairwellTop, position: "center 45%" },  // 2. Stairwell from top
+  { src: carouselExteriorStreet, position: "center 50%" }, // 3. Street view (was 8)
+  { src: carouselStaircase, position: "center 35%" },     // 4. Staircase (was 3)
+  { src: carouselDining, position: "center 40%" },        // 5. Dining room
+  { src: gvknTerrace, position: "center 55%" },           // 6. Terrace (was 4)
+  { src: carouselArtNiche, position: "center 15%" },      // 7. Art niche (was 9)
+  { src: basavaraj2, position: "center 40%" },            // 8. Building exterior (was 6)
+  { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom (was 7)
+  { src: carouselExterior, position: "center 50%" },      // 10. Exterior render
+  { src: carouselDecorNiche, position: "center 25%" },    // 11. Decor niche
 ];
 
 const Hero = () => {

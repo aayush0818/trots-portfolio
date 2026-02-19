@@ -20,11 +20,11 @@ import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 const heroImages = [
   { src: gvknHero, position: "center 40%" },             // 1. Residence hero
   { src: carouselStairwellTop, position: "center 45%" },  // 2. Stairwell from top
-  { src: carouselExteriorStreet, position: "center 50%" }, // 3. Street view (was 8)
+  { src: carouselExteriorStreet, position: "center 35%" }, // 3. Street view - moved up
   { src: carouselStaircase, position: "center 35%" },     // 4. Staircase (was 3)
-  { src: carouselDining, position: "center 40%" },        // 5. Dining room
+  { src: carouselDining, position: "center 55%" },        // 5. Dining room - moved down
   { src: gvknTerrace, position: "center 55%" },           // 6. Terrace (was 4)
-  { src: carouselArtNiche, position: "center 15%" },      // 7. Art niche (was 9)
+  { src: carouselArtNiche, position: "center 40%" },      // 7. Art niche - centered to show sculpture
   { src: basavaraj2, position: "center 40%" },            // 8. Building exterior (was 6)
   { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom (was 7)
   { src: carouselExterior, position: "center 50%" },      // 10. Exterior render

@@ -27,7 +27,7 @@ const heroImages = [
   { src: carouselArtNiche, position: "center 40%" },      // 7. Art niche
   { src: carouselSlide8, position: "center 45%" },        // 8. Villa render
   { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom
-  { src: carouselExterior, position: "center 50%" },      // 10. Exterior render
+  
   { src: carouselDecorNiche, position: "center 25%" },    // 11. Decor niche
 ];
 

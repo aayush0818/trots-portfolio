@@ -6,27 +6,27 @@ import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
-import gvknTerrace from "@/assets/gvkn-terrace-1.jpg";
-import basavaraj2 from "@/assets/basavaraj-2.jpg";
-import carouselStaircase from "@/assets/carousel-staircase.png";
+import carouselSlide3 from "@/assets/carousel-slide-3.jpg";
+import carouselSlide4 from "@/assets/carousel-slide-4.jpg";
+import carouselSlide6 from "@/assets/carousel-slide-6.jpg";
+import carouselSlide8 from "@/assets/carousel-slide-8.jpg";
 import carouselArtNiche from "@/assets/carousel-art-niche.png";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselDecorNiche from "@/assets/carousel-decor-niche.jpg";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
-import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
 const heroImages = [
   { src: gvknHero, position: "center 40%" },             // 1. Residence hero
   { src: carouselStairwellTop, position: "center 45%" },  // 2. Stairwell from top
-  { src: carouselExteriorStreet, position: "center 35%" }, // 3. Street view - moved up
-  { src: carouselStaircase, position: "center 35%" },     // 4. Staircase (was 3)
-  { src: carouselDining, position: "center 55%" },        // 5. Dining room - moved down
-  { src: gvknTerrace, position: "center 55%" },           // 6. Terrace (was 4)
-  { src: carouselArtNiche, position: "center 40%" },      // 7. Art niche - centered to show sculpture
-  { src: basavaraj2, position: "center 40%" },            // 8. Building exterior (was 6)
-  { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom (was 7)
+  { src: carouselSlide3, position: "center 40%" },        // 3. Apartment exterior
+  { src: carouselSlide4, position: "center 50%" },        // 4. Terrace garden
+  { src: carouselDining, position: "center 55%" },        // 5. Dining room
+  { src: carouselSlide6, position: "center 45%" },        // 6. Pergola terrace
+  { src: carouselArtNiche, position: "center 40%" },      // 7. Art niche
+  { src: carouselSlide8, position: "center 45%" },        // 8. Villa render
+  { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom
   { src: carouselExterior, position: "center 50%" },      // 10. Exterior render
   { src: carouselDecorNiche, position: "center 25%" },    // 11. Decor niche
 ];

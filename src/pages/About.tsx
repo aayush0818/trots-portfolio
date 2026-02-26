@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import nandeshImg from "@/assets/nandesh-gk.jpeg";
 import nikithaImg from "@/assets/nikitha-gs.jpeg";
+import { usePageTitle } from "@/hooks/usePageTitle";
 const About = () => {
+  usePageTitle("About — Studio, Philosophy & Team");
   return <div className="min-h-screen bg-background">
       <Header />
       

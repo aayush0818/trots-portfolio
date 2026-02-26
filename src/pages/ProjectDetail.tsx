@@ -5,10 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
 import { ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
   const project = projects.find((p) => p.id === id);
+  usePageTitle(project ? `${project.name} — ${project.type} in ${project.location}` : "Project");
   const [selectedImage, setSelectedImage] = useState(0);
 
   if (!project) {

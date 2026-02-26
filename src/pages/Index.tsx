@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import IntroScreen from "@/components/IntroScreen";
 import Hero from "@/components/sections/Hero";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const INTRO_SHOWN_KEY = "trots-intro-shown";
 
 const Index = () => {
+  usePageTitle();
   const [showIntro, setShowIntro] = useState(false);
   const [introComplete, setIntroComplete] = useState(false);
 

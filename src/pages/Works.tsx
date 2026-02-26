@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { projects } from "@/data/projects";
+import { usePageTitle } from "@/hooks/usePageTitle";
 
 const Works = () => {
+  usePageTitle("Works — Architecture & Interior Projects");
   return (
     <div className="min-h-screen bg-background">
       <Header />

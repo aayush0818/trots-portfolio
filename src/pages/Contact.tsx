@@ -21,13 +21,27 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    toast({
-      title: "Message sent",
-      description: "We'll be in touch soon.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+    try {
+      const { error } = await supabase.from("contact_inquiries").insert({
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      });
+      if (error) throw error;
+      toast({
+        title: "Message sent",
+        description: "We'll be in touch soon.",
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

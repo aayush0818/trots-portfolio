@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Works from "./pages/Works";
 import ProjectDetail from "./pages/ProjectDetail";
 import About from "./pages/About";
+import Admin from "./pages/Admin";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 

@@ -32,6 +32,13 @@ import basavarajFrontView from "@/assets/basavaraj-front-view.jpg";
 import basavarajSideView from "@/assets/basavaraj-side-view.jpg";
 import vedham from "@/assets/vedham.jpg";
 import nandhyal from "@/assets/nandhyal.jpg";
+import peninsulaLiving from "@/assets/peninsula-living.png";
+import peninsulaBedroom from "@/assets/peninsula-bedroom.jpg";
+import peninsulaMasterBedroom from "@/assets/peninsula-master-bedroom.jpg";
+import peninsulaCorridor from "@/assets/peninsula-corridor.jpg";
+import peninsulaWalkin from "@/assets/peninsula-walkin.jpg";
+import peninsulaPlan from "@/assets/peninsula-plan.jpg";
+import peninsulaSonsBedroom from "@/assets/peninsula-sons-bedroom.jpg";
 
 
 export interface Project {
@@ -130,5 +137,24 @@ export const projects: Project[] = [
     images: [nandhyal],
     description:
       "Township master plan featuring 200 residential plots with comprehensive amenities including club house, swimming pool, amphitheatre, sports courts, and landscaped open spaces. The design balances density with green infrastructure along a 200-feet wide main road corridor.",
+  },
+  {
+    id: "peninsula-heights",
+    name: "Peninsula Heights",
+    location: "JP Nagar, Bangalore",
+    type: "Residential Interiors",
+    status: "Completed",
+    heroImage: peninsulaLiving,
+    images: [
+      peninsulaLiving,
+      peninsulaMasterBedroom,
+      peninsulaBedroom,
+      peninsulaSonsBedroom,
+      peninsulaCorridor,
+      peninsulaWalkin,
+      peninsulaPlan,
+    ],
+    description:
+      "Located in South Bangalore in JP Nagar at Peninsula Heights, this 3,200 sq. ft. apartment is thoughtfully designed to engage with its immediate landscape and context. The apartment opens into a generous living space, seamlessly extending into a large balcony that stretches across the entire length of the living room. This balcony overlooks the primary activity zone of the complex, enriched with lush landscaping elements, creating a strong visual and spatial connection to the outdoors. All bedrooms are oriented towards this landscaped zone, ensuring ample natural light, cross ventilation and a consistent visual connection to greenery. The interiors are carefully designed to cater to a family of four, balancing functionality with a refined aesthetic. The design language is modern, light and understated, allowing spaces to feel open, breathable, and timeless. Planters are thoughtfully integrated across the apartment, bringing in layers of greenery that blur the boundary between indoors and outdoors. A combination of multiple design elements, materials, textures, and subtle spatial articulations are used to create depth and character within the home, while maintaining a cohesive and harmonious overall environment.",
   },
 ];

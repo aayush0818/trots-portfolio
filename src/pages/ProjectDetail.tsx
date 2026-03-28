@@ -167,7 +167,7 @@ const ProjectDetail = () => {
 
               {/* Thumbnail Strip */}
               {galleryImages.length > 1 && (
-                <div className="flex gap-2 overflow-x-auto pb-2 justify-center">
+                <div className="flex gap-2 overflow-x-auto pb-2 sm:justify-center">
                   {galleryImages.map((image, index) => (
                     <button
                       key={index}
@@ -181,7 +181,7 @@ const ProjectDetail = () => {
                       <img
                         src={image}
                         alt={`${project.name} - Thumbnail ${index + 2}`}
-                        className="w-20 h-14 object-cover"
+                        className="w-16 h-11 sm:w-20 sm:h-14 object-cover"
                       />
                     </button>
                   ))}

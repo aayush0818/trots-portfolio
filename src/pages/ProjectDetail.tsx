@@ -36,7 +36,7 @@ const ProjectDetail = () => {
       <Header />
       <main>
         {/* Hero Image with Title Overlay */}
-        <section className="relative h-screen">
+        <section className="relative h-[100dvh] min-h-[500px]">
           <div className="absolute inset-0">
             <img
               src={project.heroImage}
@@ -45,7 +45,7 @@ const ProjectDetail = () => {
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 px-8 md:px-16 pb-8">
+          <div className="absolute bottom-0 left-0 right-0 px-4 sm:px-8 md:px-16 pb-6 sm:pb-8">
             <h1 className="font-serif text-3xl md:text-5xl text-white">
               {project.name}
             </h1>
@@ -53,7 +53,7 @@ const ProjectDetail = () => {
         </section>
 
         {/* Two Column Layout: Details + Featured Image */}
-        <section className="px-8 md:px-16 py-16">
+        <section className="px-4 sm:px-8 md:px-16 py-10 sm:py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -129,7 +129,7 @@ const ProjectDetail = () => {
 
         {/* Image Gallery with Carousel */}
         {galleryImages.length > 0 && (
-          <section className="px-8 md:px-16 pb-16">
+          <section className="px-4 sm:px-8 md:px-16 pb-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -149,17 +149,17 @@ const ProjectDetail = () => {
                   <>
                     <button
                       onClick={prevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground transition-colors"
+                      className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 p-1 sm:p-2 bg-black/30 rounded-full text-white/80 hover:text-white transition-colors"
                       aria-label="Previous image"
                     >
-                      <ChevronLeft className="w-8 h-8" />
+                      <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8" />
                     </button>
                     <button
                       onClick={nextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 p-2 text-muted-foreground hover:text-foreground transition-colors"
+                      className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 p-1 sm:p-2 bg-black/30 rounded-full text-white/80 hover:text-white transition-colors"
                       aria-label="Next image"
                     >
-                      <ChevronRight className="w-8 h-8" />
+                      <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8" />
                     </button>
                   </>
                 )}
@@ -167,7 +167,7 @@ const ProjectDetail = () => {
 
               {/* Thumbnail Strip */}
               {galleryImages.length > 1 && (
-                <div className="flex gap-2 overflow-x-auto pb-2 justify-center">
+                <div className="flex gap-2 overflow-x-auto pb-2 sm:justify-center">
                   {galleryImages.map((image, index) => (
                     <button
                       key={index}
@@ -181,7 +181,7 @@ const ProjectDetail = () => {
                       <img
                         src={image}
                         alt={`${project.name} - Thumbnail ${index + 2}`}
-                        className="w-20 h-14 object-cover"
+                        className="w-16 h-11 sm:w-20 sm:h-14 object-cover"
                       />
                     </button>
                   ))}

@@ -20,7 +20,7 @@ import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 const heroImages = [
   { src: gvknHero, position: "center 40%" },             // 1. Residence hero
   { src: carouselStairwellTop, position: "center 45%" },  // 2. Stairwell from top
-  { src: carouselSlide3, position: "center 40%" },        // 3. Apartment exterior
+  { src: peninsulaLivingHero, position: "center 40%" },   // 3. Peninsula living
   { src: carouselSlide4, position: "center 50%" },        // 4. Terrace garden
   { src: carouselDining, position: "center 55%" },        // 5. Dining room
   { src: carouselSlide6, position: "center 45%" },        // 6. Pergola terrace

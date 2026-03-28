@@ -32,6 +32,13 @@ import basavarajFrontView from "@/assets/basavaraj-front-view.jpg";
 import basavarajSideView from "@/assets/basavaraj-side-view.jpg";
 import vedham from "@/assets/vedham.jpg";
 import nandhyal from "@/assets/nandhyal.jpg";
+import peninsulaLiving from "@/assets/peninsula-living.png";
+import peninsulaBedroom from "@/assets/peninsula-bedroom.jpg";
+import peninsulaMasterBedroom from "@/assets/peninsula-master-bedroom.jpg";
+import peninsulaCorridor from "@/assets/peninsula-corridor.jpg";
+import peninsulaWalkin from "@/assets/peninsula-walkin.jpg";
+import peninsulaPlan from "@/assets/peninsula-plan.jpg";
+import peninsulaSonsBedroom from "@/assets/peninsula-sons-bedroom.jpg";
 
 
 export interface Project {

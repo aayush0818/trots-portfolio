@@ -14,21 +14,22 @@ import carouselArtNiche from "@/assets/carousel-art-niche.png";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
-import carouselDecorNiche from "@/assets/carousel-decor-niche.jpg";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
+import carouselExteriorStreet from "@/assets/carousel-exterior-street.png";
+import carouselPeninsulaBedroom from "@/assets/carousel-peninsula-bedroom.png";
 
 const heroImages = [
-  { src: gvknHero, position: "center 40%" },             // 1. Residence hero
-  { src: carouselStairwellTop, position: "center 45%" },  // 2. Stairwell from top
-  { src: peninsulaLivingHero, position: "center 40%" },   // 3. Peninsula living
-  { src: carouselSlide4, position: "center 50%" },        // 4. Terrace garden
-  { src: carouselDining, position: "center 55%" },        // 5. Dining room
-  { src: carouselSlide6, position: "center 45%" },        // 6. Pergola terrace
-  { src: carouselArtNiche, position: "center 40%" },      // 7. Art niche
-  { src: carouselSlide8, position: "center 45%" },        // 8. Villa render
-  { src: carouselBedroom, position: "center 45%" },       // 9. Bedroom
-  
-  { src: carouselDecorNiche, position: "center 25%" },    // 11. Decor niche
+  { src: gvknHero, position: "center 40%" },                // 1. Residence hero
+  { src: carouselStairwellTop, position: "center 45%" },     // 2. Stairwell from top
+  { src: peninsulaLivingHero, position: "center 40%" },      // 3. Peninsula living
+  { src: carouselExteriorStreet, position: "center 40%" },   // 4. Exterior street view
+  { src: carouselPeninsulaBedroom, position: "center 45%" }, // 5. Peninsula bedroom
+  { src: carouselSlide4, position: "center 50%" },           // 6. Terrace garden
+  { src: carouselDining, position: "center 55%" },           // 7. Dining room
+  { src: carouselSlide6, position: "center 45%" },           // 8. Pergola terrace
+  { src: carouselArtNiche, position: "center 40%" },         // 9. Art niche
+  { src: carouselSlide8, position: "center 45%" },           // 10. Villa render
+  { src: carouselBedroom, position: "center 45%" },          // 11. Bedroom
 ];
 
 const Hero = () => {

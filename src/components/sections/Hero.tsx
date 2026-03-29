@@ -76,7 +76,7 @@ const Hero = () => {
             src={image.src}
             alt="Architecture"
             className="w-full h-full object-cover"
-            style={{ objectPosition: image.position }}
+            style={{ objectPosition: isDesktop ? image.desktopPosition : image.position }}
           />
         </motion.div>
       ))}

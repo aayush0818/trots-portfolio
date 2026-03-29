@@ -19,22 +19,29 @@ import carouselExteriorStreet from "@/assets/carousel-exterior-street.png";
 import carouselPeninsulaBedroom from "@/assets/carousel-peninsula-bedroom.png";
 
 const heroImages = [
-  { src: gvknHero, position: "center 40%" },                // 1. Residence hero
-  { src: carouselStairwellTop, position: "center 45%" },     // 2. Stairwell from top
-  { src: peninsulaLivingHero, position: "center 40%" },      // 3. Peninsula living
-  { src: carouselExteriorStreet, position: "center 40%" },   // 4. Exterior street view
-  { src: carouselPeninsulaBedroom, position: "center 45%" }, // 5. Peninsula bedroom
-  { src: carouselSlide4, position: "center 50%" },           // 6. Terrace garden
-  { src: carouselDining, position: "center 55%" },           // 7. Dining room
-  { src: carouselSlide6, position: "center 45%" },           // 8. Pergola terrace
-  { src: carouselArtNiche, position: "center 40%" },         // 9. Art niche
-  { src: carouselSlide8, position: "center 45%" },           // 10. Villa render
-  { src: carouselBedroom, position: "center 45%" },          // 11. Bedroom
+  { src: gvknHero, position: "center 40%", desktopPosition: "center 40%" },                // 1. Residence hero
+  { src: carouselStairwellTop, position: "center 45%", desktopPosition: "center 45%" },     // 2. Stairwell from top
+  { src: peninsulaLivingHero, position: "center 40%", desktopPosition: "center 40%" },      // 3. Peninsula living
+  { src: carouselExteriorStreet, position: "center 40%", desktopPosition: "center 30%" },   // 4. Exterior street view — show more of building top on desktop
+  { src: carouselPeninsulaBedroom, position: "center 45%", desktopPosition: "center 35%" }, // 5. Peninsula bedroom — slightly higher crop on desktop
+  { src: carouselSlide4, position: "center 50%", desktopPosition: "center 50%" },           // 6. Terrace garden
+  { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room
+  { src: carouselSlide6, position: "center 45%", desktopPosition: "center 45%" },           // 8. Pergola terrace
+  { src: carouselArtNiche, position: "center 40%", desktopPosition: "center 40%" },         // 9. Art niche
+  { src: carouselSlide8, position: "center 45%", desktopPosition: "center 45%" },           // 10. Villa render
+  { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 11. Bedroom
 ];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % heroImages.length);
@@ -69,7 +76,7 @@ const Hero = () => {
             src={image.src}
             alt="Architecture"
             className="w-full h-full object-cover"
-            style={{ objectPosition: image.position }}
+            style={{ objectPosition: isDesktop ? image.desktopPosition : image.position }}
           />
         </motion.div>
       ))}

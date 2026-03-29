@@ -23,7 +23,7 @@ const heroImages = [
   { src: carouselStairwellTop, position: "center 45%", desktopPosition: "center 45%" },     // 2. Stairwell from top
   { src: peninsulaLivingHero, position: "center 40%", desktopPosition: "center 40%" },      // 3. Peninsula living
   { src: carouselExteriorStreet, position: "center 40%", desktopPosition: "center 30%" },   // 4. Exterior street view — show more of building top on desktop
-  { src: carouselPeninsulaBedroom, position: "center 45%", desktopPosition: "center 35%" }, // 5. Peninsula bedroom — slightly higher crop on desktop
+  { src: carouselPeninsulaBedroom, position: "center 45%", desktopPosition: "center 60%" }, // 5. Peninsula bedroom — show bed on desktop
   { src: carouselSlide4, position: "center 50%", desktopPosition: "center 50%" },           // 6. Terrace garden
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room
   { src: carouselSlide6, position: "center 45%", desktopPosition: "center 45%" },           // 8. Pergola terrace

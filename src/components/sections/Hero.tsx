@@ -7,15 +7,12 @@ import trotsLogo from "@/assets/trots-logo.png";
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
 import carouselLivingNew from "@/assets/carousel-living-new.png";
-import carouselSlide4 from "@/assets/carousel-slide-4.jpg";
 import carouselSlide5 from "@/assets/carousel-slide-5.jpg";
-import carouselSlide6 from "@/assets/carousel-slide-6.jpg";
 import carouselSlide6a from "@/assets/carousel-slide-6a.jpg";
-import carouselSlide8 from "@/assets/carousel-slide-8.jpg";
-import carouselArtNiche from "@/assets/carousel-art-niche.png";
+import carouselSlide7 from "@/assets/carousel-slide-7.jpg";
+import carouselSlide10 from "@/assets/carousel-slide-10.jpg";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
-import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 
@@ -27,11 +24,10 @@ const heroImages = [
   { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 45%" },        // 4. Living room
   { src: carouselSlide5, position: "center 45%", desktopPosition: "center 45%" },            // 5. Terrace garden
   { src: carouselSlide6a, position: "center 45%", desktopPosition: "center 45%" },           // 6. Bedroom
-  { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room
-  { src: carouselSlide6, position: "center 45%", desktopPosition: "center 45%" },           // 8. Pergola terrace
-  { src: carouselArtNiche, position: "center 40%", desktopPosition: "center 40%" },         // 9. Art niche
-  { src: carouselSlide8, position: "center 45%", desktopPosition: "center 45%" },           // 10. Villa render
-  { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 11. Bedroom
+  { src: carouselSlide7, position: "center 40%", desktopPosition: "center 40%" },            // 7. Exterior building
+  { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 8. Dining room
+  { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 9. Bedroom
+  { src: carouselSlide10, position: "center 45%", desktopPosition: "center 45%" },          // 10. Kitchen
 ];
 
 const Hero = () => {

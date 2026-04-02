@@ -24,11 +24,10 @@ const heroImages = [
   { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 45%" },        // 4. Living room
   { src: carouselSlide5, position: "center 45%", desktopPosition: "center 45%" },            // 5. Terrace garden
   { src: carouselSlide6a, position: "center 45%", desktopPosition: "center 45%" },           // 6. Bedroom
-  { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room
-  { src: carouselSlide6, position: "center 45%", desktopPosition: "center 45%" },           // 8. Pergola terrace
-  { src: carouselArtNiche, position: "center 40%", desktopPosition: "center 40%" },         // 9. Art niche
-  { src: carouselSlide8, position: "center 45%", desktopPosition: "center 45%" },           // 10. Villa render
-  { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 11. Bedroom
+  { src: carouselSlide7, position: "center 40%", desktopPosition: "center 40%" },            // 7. Exterior building
+  { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 8. Dining room
+  { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 9. Bedroom
+  { src: carouselSlide10, position: "center 45%", desktopPosition: "center 45%" },          // 10. Kitchen
 ];
 
 const Hero = () => {

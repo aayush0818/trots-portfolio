@@ -30,6 +30,8 @@ const heroImages = [
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 8. Dining room
   { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 9. Bedroom
   { src: carouselSlide10, position: "center 45%", desktopPosition: "center 45%" },          // 10. Kitchen
+  { src: carouselSlide11, position: "center 50%", desktopPosition: "center 50%" },          // 11. Bedroom
+  { src: carouselSlide12, position: "center 40%", desktopPosition: "center 40%" },          // 12. Stairwell art
 ];
 
 const Hero = () => {

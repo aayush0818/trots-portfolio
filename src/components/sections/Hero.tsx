@@ -18,7 +18,7 @@ import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
-import carouselPeninsulaBedroom from "@/assets/carousel-peninsula-bedroom.png";
+
 
 const heroImages = [
   { src: gvknHero, position: "center 40%", desktopPosition: "center 40%" },                // 1. Residence hero

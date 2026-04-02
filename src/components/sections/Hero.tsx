@@ -15,7 +15,7 @@ import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
-import carouselExteriorStreet from "@/assets/carousel-exterior-street.png";
+import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 import carouselPeninsulaBedroom from "@/assets/carousel-peninsula-bedroom.png";
 
 const heroImages = [

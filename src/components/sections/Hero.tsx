@@ -11,6 +11,8 @@ import carouselSlide5 from "@/assets/carousel-slide-5.jpg";
 import carouselSlide6a from "@/assets/carousel-slide-6a.jpg";
 import carouselSlide7 from "@/assets/carousel-slide-7.jpg";
 import carouselSlide10 from "@/assets/carousel-slide-10.jpg";
+import carouselSlide11 from "@/assets/carousel-slide-11.jpg";
+import carouselSlide12 from "@/assets/carousel-slide-12.jpg";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";

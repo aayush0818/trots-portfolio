@@ -7,15 +7,12 @@ import trotsLogo from "@/assets/trots-logo.png";
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
 import carouselLivingNew from "@/assets/carousel-living-new.png";
-import carouselSlide4 from "@/assets/carousel-slide-4.jpg";
 import carouselSlide5 from "@/assets/carousel-slide-5.jpg";
-import carouselSlide6 from "@/assets/carousel-slide-6.jpg";
 import carouselSlide6a from "@/assets/carousel-slide-6a.jpg";
-import carouselSlide8 from "@/assets/carousel-slide-8.jpg";
-import carouselArtNiche from "@/assets/carousel-art-niche.png";
+import carouselSlide7 from "@/assets/carousel-slide-7.jpg";
+import carouselSlide10 from "@/assets/carousel-slide-10.jpg";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
-import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
 import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 

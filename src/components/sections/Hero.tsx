@@ -26,7 +26,7 @@ const heroImages = [
   { src: carouselExteriorStreet, position: "center 35%", desktopPosition: "center 30%" },   // 3. Exterior street view
   { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 45%" },        // 4. Living room
   { src: carouselSlide5, position: "center 45%", desktopPosition: "center 45%" },            // 5. Terrace garden
-  { src: carouselSlide4, position: "center 50%", desktopPosition: "center 50%" },            // 6. Terrace garden old
+  { src: carouselSlide6a, position: "center 45%", desktopPosition: "center 45%" },           // 6. Bedroom
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room
   { src: carouselSlide6, position: "center 45%", desktopPosition: "center 45%" },           // 8. Pergola terrace
   { src: carouselArtNiche, position: "center 40%", desktopPosition: "center 40%" },         // 9. Art niche

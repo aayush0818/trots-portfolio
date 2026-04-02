@@ -11,6 +11,8 @@ import carouselSlide5 from "@/assets/carousel-slide-5.jpg";
 import carouselSlide6a from "@/assets/carousel-slide-6a.jpg";
 import carouselSlide7 from "@/assets/carousel-slide-7.jpg";
 import carouselSlide10 from "@/assets/carousel-slide-10.jpg";
+import carouselSlide11 from "@/assets/carousel-slide-11.jpg";
+import carouselSlide12 from "@/assets/carousel-slide-12.jpg";
 import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
@@ -28,6 +30,8 @@ const heroImages = [
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 8. Dining room
   { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 9. Bedroom
   { src: carouselSlide10, position: "center 45%", desktopPosition: "center 45%" },          // 10. Kitchen
+  { src: carouselSlide11, position: "center 50%", desktopPosition: "center 50%" },          // 11. Bedroom
+  { src: carouselSlide12, position: "center 40%", desktopPosition: "center 40%" },          // 12. Stairwell art
 ];
 
 const Hero = () => {

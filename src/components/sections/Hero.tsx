@@ -6,7 +6,7 @@ import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
 import gvknHero from "@/assets/gvkn-residence-hero.jpg";
-import peninsulaLivingHero from "@/assets/peninsula-living-hero.png";
+import carouselLivingNew from "@/assets/carousel-living-new.png";
 import carouselSlide4 from "@/assets/carousel-slide-4.jpg";
 import carouselSlide6 from "@/assets/carousel-slide-6.jpg";
 import carouselSlide8 from "@/assets/carousel-slide-8.jpg";
@@ -15,14 +15,14 @@ import carouselDining from "@/assets/carousel-dining.png";
 import carouselBedroom from "@/assets/carousel-bedroom.png";
 import carouselExterior from "@/assets/carousel-exterior.png";
 import carouselStairwellTop from "@/assets/carousel-stairwell-top.jpg";
-import carouselExteriorStreet from "@/assets/carousel-exterior-street.png";
+import carouselExteriorStreet from "@/assets/carousel-exterior-street.jpg";
 import carouselPeninsulaBedroom from "@/assets/carousel-peninsula-bedroom.png";
 
 const heroImages = [
   { src: gvknHero, position: "center 40%", desktopPosition: "center 40%" },                // 1. Residence hero
   { src: carouselStairwellTop, position: "center 45%", desktopPosition: "center 45%" },     // 2. Stairwell from top
-  { src: peninsulaLivingHero, position: "center 40%", desktopPosition: "center 40%" },      // 3. Peninsula living
-  { src: carouselExteriorStreet, position: "center 40%", desktopPosition: "center 30%" },   // 4. Exterior street view — show more of building top on desktop
+  { src: carouselExteriorStreet, position: "center 35%", desktopPosition: "center 30%" },   // 3. Exterior street view
+  { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 45%" },        // 4. Living room
   { src: carouselPeninsulaBedroom, position: "center 45%", desktopPosition: "center 60%" }, // 5. Peninsula bedroom — show bed on desktop
   { src: carouselSlide4, position: "center 50%", desktopPosition: "center 50%" },           // 6. Terrace garden
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 7. Dining room

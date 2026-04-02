@@ -23,14 +23,14 @@ const heroImages = [
   { src: gvknHero, position: "center 40%", desktopPosition: "center 40%" },                // 1. Residence hero
   { src: carouselStairwellTop, position: "center 45%", desktopPosition: "center 45%" },     // 2. Stairwell from top
   { src: carouselExteriorStreet, position: "center 35%", desktopPosition: "center 30%" },   // 3. Exterior street view
-  { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 45%" },        // 4. Living room
-  { src: carouselSlide5, position: "center 45%", desktopPosition: "center 45%" },            // 5. Terrace garden
-  { src: carouselSlide6a, position: "center 45%", desktopPosition: "center 45%" },           // 6. Bedroom
-  { src: carouselSlide7, position: "center 40%", desktopPosition: "center 40%" },            // 7. Exterior building
+  { src: carouselLivingNew, position: "center 45%", desktopPosition: "center 60%" },        // 4. Living room - sofa visible
+  { src: carouselSlide5, position: "center 45%", desktopPosition: "center 55%" },            // 5. Terrace garden - zoom out
+  { src: carouselSlide6a, position: "center 45%", desktopPosition: "center 60%" },           // 6. Bedroom - bed visible
+  { src: carouselSlide7, position: "center 40%", desktopPosition: "center 55%" },            // 7. Exterior building - down
   { src: carouselDining, position: "center 55%", desktopPosition: "center 55%" },           // 8. Dining room
   { src: carouselBedroom, position: "center 45%", desktopPosition: "center 45%" },          // 9. Bedroom
-  { src: carouselSlide10, position: "center 45%", desktopPosition: "center 45%" },          // 10. Kitchen
-  { src: carouselSlide11, position: "center 50%", desktopPosition: "center 50%" },          // 11. Bedroom
+  { src: carouselSlide10, position: "center 45%", desktopPosition: "center 60%" },          // 10. Kitchen - visible
+  { src: carouselSlide11, position: "center 50%", desktopPosition: "center 65%" },          // 11. Bedroom - bed visible
   { src: carouselSlide12, position: "center 40%", desktopPosition: "center 40%" },          // 12. Stairwell art
 ];
 

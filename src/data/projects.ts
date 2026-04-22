@@ -147,6 +147,7 @@ export const projects: Project[] = [
     heroImage: peninsulaLiving,
     images: [
       peninsulaLiving,
+      peninsulaLiving,
       peninsulaMasterBedroom,
       peninsulaBedroom,
       peninsulaSonsBedroom,

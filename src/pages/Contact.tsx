@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { supabase } from "@/integrations/supabase/client";
 import { useState } from "react";
-import { ArrowRight, Instagram, Linkedin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Instagram, Linkedin } from "@/components/SocialIcons";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Input } from "@/components/ui/input";

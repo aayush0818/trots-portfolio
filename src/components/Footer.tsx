@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin } from "@/components/SocialIcons";
 import trotsLogo from "@/assets/trots-logo.png";
 
 const Footer = () => {

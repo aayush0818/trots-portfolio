@@ -1,7 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Instagram, Linkedin } from "lucide-react";
+import { Menu } from "lucide-react";
+import { Instagram, Linkedin } from "@/components/SocialIcons";
 import trotsLogo from "@/assets/trots-logo.png";
 
 // Curated hero images - landscape-friendly compositions
